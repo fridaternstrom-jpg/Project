@@ -1,0 +1,22 @@
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hiddenlinks{
+display: none;
+}
+
+#black-logo{
+    width: 20%;
+}
+
+#hamburgerMenu{
+   background: none;
+   border: none;
+   cursor: pointer;
+   margin: 1em;
+}
+
+
+
