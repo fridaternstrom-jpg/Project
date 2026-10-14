@@ -3,6 +3,14 @@ header{
     justify-content: space-between;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav li {
+    list-style: none;
+}
+
 .hiddenlinks{
 display: none;
 }
