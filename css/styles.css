@@ -1,18 +1,21 @@
-header{
-    display: flex;
-    justify-content: space-between;
-}
 
 nav a {
     text-decoration: none;
     color: black;
 }
+
 nav li {
     list-style: none;
+    padding: 5px; 
 }
 
+.closed-menu {
+    display: flex;
+    justify-content: space-between;
+}
 .hiddenlinks{
 display: none;
+padding: 10px 10px;
 }
 
 #black-logo{
@@ -23,7 +26,6 @@ display: none;
    background: none;
    border: none;
    cursor: pointer;
-   margin: 1em;
 }
 
 
