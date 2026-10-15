@@ -58,6 +58,7 @@ nav li {
 
 #main-box {
     position: relative;
+    height: 800px;
 }
 
 #main-background {
@@ -126,3 +127,6 @@ margin: 10px 40px;
     margin-top: 5x;
 }
 
+article {
+    
+}
