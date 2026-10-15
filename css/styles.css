@@ -1,3 +1,11 @@
+:root {
+    font-family: "Inria", serif;
+}
+
+body {
+    margin: 0;
+    display: block;
+}
 
 nav a {
     text-decoration: none;
@@ -13,20 +21,38 @@ nav li {
     display: flex;
     justify-content: space-between;
 }
-.hiddenlinks{
+.hiddenlinks {
 display: none;
 padding: 10px 10px;
 }
 
-#black-logo{
+#black-logo {
     width: 20%;
 }
 
-#hamburgerMenu{
+#hamburgerMenu {
    background: none;
    border: none;
    cursor: pointer;
 }
+
+#main-box {
+    position: relative;
+}
+
+#main-background {
+width: 100%;
+height: auto;
+position: absolute;
+}
+
+#main-text {
+    position: absolute;
+    font-family: "Inria Serif", serif;
+    font-size: 0.9em;
+    padding: 2em;
+}
+
 
 
 
