@@ -1,11 +1,17 @@
 :root {
-    font-family: "Inria", serif;
+    --primary-color: #A6CDDE;
+    --highlight: #225469;
+    --secondary-color: #678796;
 }
 
 body {
     margin: 0;
     display: block;
+    font-family: "Inria Serif";
+    font-weight: 300;
+    
 }
+
 
 nav a {
     text-decoration: none;
@@ -48,7 +54,6 @@ position: absolute;
 
 #main-text {
     position: absolute;
-    font-family: "Inria Serif", serif;
     font-size: 0.9em;
     padding: 2em;
 }
