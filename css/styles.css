@@ -7,11 +7,14 @@
 body {
     margin: 0;
     display: block;
-    font-family: "Inria Serif";
+    font-family: "Inria Serif", serif;
     font-weight: 300;
-    
+
 }
 
+header {
+    padding: 10px;
+}
 
 nav a {
     text-decoration: none;
@@ -20,16 +23,17 @@ nav a {
 
 nav li {
     list-style: none;
-    padding: 5px; 
+    padding: 5px;
 }
 
 .closed-menu {
     display: flex;
     justify-content: space-between;
 }
+
 .hiddenlinks {
-display: none;
-padding: 10px 10px;
+    display: none;
+    padding: 10px 10px;
 }
 
 #black-logo {
@@ -37,9 +41,18 @@ padding: 10px 10px;
 }
 
 #hamburgerMenu {
-   background: none;
-   border: none;
-   cursor: pointer;
+    display: flex;
+    gap: 20px;
+    background: var(--primary-color);
+    padding: 5px 20px 5px 10px;
+    border-radius: 15px;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#burger {
+    align-self: center;
 }
 
 #main-box {
@@ -47,17 +60,21 @@ padding: 10px 10px;
 }
 
 #main-background {
-width: 100%;
-height: auto;
-position: absolute;
+    width: 100%;
+    height: auto;
+    position: absolute;
 }
 
 #main-text {
     position: absolute;
-    font-size: 0.9em;
-    padding: 2em;
 }
 
+.mainheader {
+    font-size: 28px;
+    padding: 10px 25px;
+}
 
-
-
+.further {
+    padding-right: 30px;
+    padding-left: 30px;
+}
