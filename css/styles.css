@@ -10,7 +10,6 @@ body {
     display: block;
     font-family: "Inria Serif", serif;
     font-weight: 400;
-    height: 100%;
 }
 
 header {
@@ -59,9 +58,9 @@ nav li {
 #hero-img {
     background-image: url("/images/mapkid.jpg");
     background-size: cover;
-    background-position: bottom;
+    background-position: center;
     position: relative;
-    height: 900px;
+    height: 250vw;
 }
 .main-text {
     position: absolute;
@@ -162,6 +161,7 @@ article p {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 100%;
 }
 
 .question-card {
