@@ -97,21 +97,21 @@ nav li {
 }
 
 .card {
-display: grid;
-grid-template-columns: 1fr 2fr;
-gap: 10px;
-background-color: var(--neutral-color);
-border-radius: 10px;
-margin: 10px 40px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    background-color: var(--neutral-color);
+    border-radius: 10px;
+    margin: 10px 40px;
 }
 
-.card h2{
+.card h2 {
     grid-column: 2;
     font-size: 12px;
     margin-bottom: 5px;
 }
 
-.card p{
+.card p {
     grid-column: 2;
     font-size: 9px;
     margin: 0px 5px 0px 5px;
@@ -146,9 +146,9 @@ article p {
 }
 
 #form-head p {
-font-size: 11px;
-padding: 0px 12px 5px 5px;
-margin-top: 0;
+    font-size: 11px;
+    padding: 0px 12px 5px 5px;
+    margin-top: 0;
 }
 
 #form-head h3 {
@@ -174,13 +174,27 @@ margin-top: 0;
 }
 
 .question-card {
+    grid-column: 1;
     background-color: var(--secondary-color);
-border-radius: 15px;
-padding: 2px 5px 2px 5px;
-margin-top: 20px;
+    border-radius: 15px;
+    padding: 2px 5px 2px 5px;
+    margin: 20px;
+}
+
+.question-card label {
+    font-size: 12px;
 }
 
 .question-card h4 {
     color: white;
-    font-size: 12px;
+    font-size: 11px;
+}
+
+#analyse-button {
+    background-color: var(--highlight);
+    color: white;
+}
+
+.question-card2 {
+    grid-column: 2;
 }
