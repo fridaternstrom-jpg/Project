@@ -10,7 +10,7 @@ body {
     display: block;
     font-family: "Inria Serif", serif;
     font-weight: 400;
-
+    height: 100%;
 }
 
 header {
@@ -56,24 +56,15 @@ nav li {
     align-self: center;
 }
 
-#main-box {
-    position: relative;
-    height: 780px;
-}
-
-#main-background {
-    width: 100%;
-    height: auto;
-    position: absolute;
-}
-
-#main-text {
-    position: absolute;
+#hero-img {
+    background-image: url("/images/mapkid.jpg");
+    background-size: cover;
+    background-position: bottom;
 }
 
 .mainheader {
     font-size: 34px;
-    padding: 10px 25px 0px;
+    padding: 50px 25px 0px;
     margin-bottom: 5px;
     font-weight: 400;
 }
@@ -122,8 +113,7 @@ nav li {
     color: black;
     font-size: 9px;
     font-weight: 700;
-    margin-left: 50px;
-    margin-top: 5x;
+    margin: 5px 50px 260px 50px;
 }
 
 article {
