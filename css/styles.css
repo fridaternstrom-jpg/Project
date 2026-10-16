@@ -9,7 +9,7 @@ body {
     margin: 0;
     display: block;
     font-family: "Inria Serif", serif;
-    font-weight: 300;
+    font-weight: 400;
 
 }
 
@@ -58,7 +58,7 @@ nav li {
 
 #main-box {
     position: relative;
-    height: 800px;
+    height: 780px;
 }
 
 #main-background {
@@ -82,7 +82,6 @@ nav li {
     padding-right: 30px;
     padding-left: 30px;
     font-size: 14px;
-    font-weight: 400;
 }
 
 #info-cards {
@@ -128,5 +127,60 @@ margin: 10px 40px;
 }
 
 article {
-    
+    padding: 25px;
+}
+
+article h2 {
+    font-size: 22px;
+}
+
+article p {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+#form-head {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1px 20px 1px;
+}
+
+#form-head p {
+font-size: 11px;
+padding: 0px 12px 5px 5px;
+margin-top: 0;
+}
+
+#form-head h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+}
+
+#help-form {
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+#help-form img {
+    width: 100%;
+    height: auto;
+    grid-column: 1/3;
+}
+
+#form-text {
+    position: absolute;
+}
+
+.question-card {
+    background-color: var(--secondary-color);
+border-radius: 15px;
+padding: 2px 5px 2px 5px;
+margin-top: 20px;
+}
+
+.question-card h4 {
+    color: white;
+    font-size: 12px;
 }
