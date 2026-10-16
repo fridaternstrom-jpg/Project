@@ -61,7 +61,7 @@ nav li {
     background-size: cover;
     background-position: bottom;
     position: relative;
-    height: 200vh;
+    height: 900px;
 }
 .main-text {
     position: absolute;
@@ -150,23 +150,18 @@ article p {
     font-size: 18px;
 }
 
-#help-form {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+#form-background {
+    background-image: url(/images/smallerfield.jpg);
+    height: 500px;
+    background-position: bottom;
+    background-size: cover;
     position: relative;
-}
-
-#help-form img {
-    width: 100%;
-    height: auto;
-    grid-column: 1/3;
 }
 
 #form-text {
     position: absolute;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0px 15px 0px 15px;
 }
 
 .question-card {
@@ -188,20 +183,6 @@ article p {
     font-size: 11px;
 }
 
-#analyze-button {
-    background-color: var(--highlight);
-    color: white;
-    grid-column: 1/3;
-    padding: 8px 30px;
-    font-family: "Inria Serif", serif;
-    font-weight: 600;
-    font-size: 18px;
-    border-radius: 15px;
-    justify-self: center;
-    cursor: pointer;
-    margin: 20px;
-}
-
 #card1 {
     grid-column: 2;
     grid-row: 1;
@@ -214,6 +195,20 @@ article p {
 
 #card3 {
     grid-column: 2;
+}
+
+#analyze-button {
+    background-color: var(--highlight);
+    color: white;
+    grid-column: 1/3;
+    padding: 8px 30px;
+    font-family: "Inria Serif", serif;
+    font-weight: 600;
+    font-size: 18px;
+    border-radius: 15px;
+    justify-self: center;
+    cursor: pointer;
+    margin: 20px;
 }
 
 #results { 
