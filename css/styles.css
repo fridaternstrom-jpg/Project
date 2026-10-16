@@ -60,8 +60,12 @@ nav li {
     background-image: url("/images/mapkid.jpg");
     background-size: cover;
     background-position: bottom;
+    position: relative;
+    height: 200vh;
 }
-
+.main-text {
+    position: absolute;
+}
 .mainheader {
     font-size: 34px;
     padding: 50px 25px 0px;
@@ -113,7 +117,7 @@ nav li {
     color: black;
     font-size: 9px;
     font-weight: 700;
-    margin: 5px 50px 260px 50px;
+    margin: 0px 50px 280px 50px;
 }
 
 article {
