@@ -343,10 +343,25 @@ font-size: 22px;
 
 @media (min-width: 760px) {
 
+#hamburgerMenu {
+    display: none;
+}
 
+nav {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
     .hiddenlinks {
         display: flex;
         flex-direction: row;
-        background-color: yellow;
     }
+
+    .hiddenlinks li {
+        background-color: var(--primary-color);
+        border-radius: 10px;
+        padding: 5px 10px;
+        margin: 0px 10px;
+    }
+
 }
