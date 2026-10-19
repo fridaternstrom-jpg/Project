@@ -343,9 +343,6 @@ font-size: 22px;
 
 @media (min-width: 760px) {
 
-#hamburgerMenu {
-    display: none;
-}
 
     .hiddenlinks {
         display: flex;
