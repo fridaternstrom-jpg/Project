@@ -232,7 +232,7 @@ article p {
     border-radius: 15px;
     padding: 13px 50px;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 footer {
@@ -277,4 +277,79 @@ footer a {
 #links {
     display: flex;
     flex-direction: column;
+}
+
+@media (min-width: 405px) {
+
+    .card h2 {
+    font-size: 16px;
+}
+    .card p {
+    font-size: 11px;
+}
+#results-text {
+    font-size: 16px;
+}
+}
+
+@media (min-width: 485px){
+.mainheader {
+    font-size: 40px;
+    margin-top: 60px;
+}
+.further {
+    font-size: 20px;
+}
+    .card-text {
+display: flex;
+flex-direction: column;
+justify-content: center;
+    }
+
+    .card h2 {
+        font-size: 20px;
+    }
+
+    .card p {
+        font-size: 14px;
+    }
+
+    article h2 {
+    font-size: 26px;
+}
+
+article p {
+    font-size: 18px;
+}
+
+#form-head h3 {
+font-size: 22px;
+}
+
+#form-head p {
+    font-size: 14px;
+}
+
+.question-card h4 {
+    font-size: 14px;
+}
+
+.question-card {
+    padding: 2px 5px 15px 10px;
+    margin: 20px 60px 10px;
+}
+
+}
+
+@media (min-width: 760px) {
+
+#hamburgerMenu {
+    display: none;
+}
+
+    .hiddenlinks {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+    }
 }
