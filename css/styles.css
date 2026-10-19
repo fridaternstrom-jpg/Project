@@ -62,9 +62,11 @@ nav li {
     position: relative;
     height: 250vw;
 }
+
 .main-text {
     position: absolute;
 }
+
 .mainheader {
     font-size: 34px;
     padding: 50px 25px 0px;
@@ -211,7 +213,7 @@ article p {
     margin: 20px;
 }
 
-#results { 
+#results {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -225,14 +227,54 @@ article p {
 
 #contact-button {
     background-color: var(--highlight);
-color: white;
-text-decoration: none;
-border-radius: 15px;
-padding: 13px 50px;
-font-weight: 600;
-margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 13px 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
 footer {
     background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+}
+
+footer h3 {
+    font-size: 18px;
+    margin-bottom: 0;
+    text-decoration: underline;
+    margin-top: 80px;
+}
+
+footer h4 {
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+footer p {
+    font-size: 12px;
+    margin-top: 0;
+}
+
+footer a {
+    font-size: 12px;
+    color: black;
+    text-decoration: none;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+#footerlogo {
+    width: 30%;
+}
+
+#links {
+    display: flex;
+    flex-direction: column;
 }
