@@ -572,14 +572,19 @@ footer a {
 }
 
 .professions {
-    background-color: var(--neutral-color);
-    border-radius: 10px;
-    margin: 30px;
+    margin: 50px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
 }
 
-.professions img {
+.profession-card {
+    background-color: var(--neutral-color);
+    border-radius: 10px;
+}
+.profession-card img {
     width: 100%;
-    height: auto;
+    height: 100px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
 }
@@ -587,7 +592,7 @@ footer a {
 .profession-card h2{
 font-weight: 400;
 font-size: 26px;
-padding: 26px 20px 0px;
+padding: 5px 20px 0px;
 text-align: center;
 }
 
@@ -599,5 +604,4 @@ text-align: center;
 
 .profession-card li {
     font-size: 12px;
-
 }
