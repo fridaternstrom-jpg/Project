@@ -11,7 +11,7 @@ body {
     font-family: "Inria Serif", serif;
     font-weight: 400;
 }
-
+/* Header och meny-rad */
 header {
     padding: 10px;
 }
@@ -31,6 +31,7 @@ nav li {
     justify-content: space-between;
 }
 
+/* Gömda länkar, inuti menyn */
 .hiddenlinks {
     display: none;
     padding: 10px 10px;
@@ -55,10 +56,12 @@ nav li {
     align-self: center;
 }
 
+/* Bild som ska visas vid större skärm */
 #widescreen-img {
     display: none;
 }
 
+/* Här börjar main-innehållet */
 #hero-img {
     background-image: url("/images/mapkid.jpg");
     background-size: cover;
@@ -78,12 +81,14 @@ nav li {
     font-weight: 400;
 }
 
+/* Undertext till rubriken, som ska börja lite längre in */
 .further {
     padding-right: 30px;
     padding-left: 30px;
     font-size: 14px;
 }
 
+/* De tre infokorten på förstasidan */
 #info-cards {
     display: grid;
     gap: 10px;
@@ -125,10 +130,12 @@ nav li {
     margin-left: 60px;
 }
 
+/* Länken som ska visas för större sidor */
 #link2 {
     display: none;
 }
 
+ /* Textmassan för förstasidan */
 article {
     padding: 25px;
 }
@@ -142,6 +149,7 @@ article p {
     padding-bottom: 20px;
 }
 
+/* Formuläret efter användarens intresseval */
 #form-head {
     background-color: var(--secondary-color);
     color: white;
@@ -221,6 +229,8 @@ article p {
     margin: 20px;
 }
 
+/* Resultatdelen */
+
 #results {
     display: flex;
     flex-direction: column;
@@ -242,6 +252,8 @@ article p {
     font-weight: 600;
     margin-bottom: 40px;
 }
+
+/* Här börjar footern */
 
 footer {
     background-color: var(--primary-color);
@@ -293,8 +305,10 @@ footer a {
     margin-right: 10px;
 }
 
-@media (min-width: 405px) {
+/* Under följer media queries */
 
+@media (min-width: 405px) {
+/* Gör texten större på sidan */
     .card h2 {
         font-size: 16px;
     }
@@ -309,6 +323,8 @@ footer a {
 }
 
 @media (min-width: 485px) {
+   
+   /* För att få bättre placering på innehållet ovanpå bilden */
     .mainheader {
         font-size: 40px;
         margin-top: 60px;
@@ -319,6 +335,7 @@ footer a {
         margin-bottom: 80px;
     }
 
+    /* Placerar texten i infokorten bättre */
     .card-text {
         display: flex;
         flex-direction: column;
@@ -366,6 +383,8 @@ footer a {
         font-size: 48px;
     }
 
+
+    /* För bättre placering på bilden */
     .further {
         margin-bottom: 120px;
     }
@@ -378,6 +397,8 @@ footer a {
         font-size: 16px;
     }
 
+
+    /* För att täcka också knappen */
     #form-background {
         height: 600px;
     }
@@ -388,6 +409,7 @@ footer a {
 
 @media (min-width: 860px) {
 
+    /* Här börjar en horisontell meny uppe i nav */
     #hamburgerMenu {
         display: none;
     }
@@ -398,6 +420,7 @@ footer a {
         justify-content: space-between;
     }
 
+    /* Länkarna syns istället för döljs */
     .hiddenlinks {
         display: flex;
         flex-direction: row;
@@ -410,6 +433,7 @@ footer a {
         margin: 0px 10px;
     }
 
+    /* Tar bort bakgrundsbilden, men behåller en blå bakgrund i dess ställe */
     #hero-img {
         background-image: none;
         background-color: var(--primary-color);
@@ -422,6 +446,7 @@ footer a {
         position: static;
     }
 
+    /* Ersätter bakgrundsbilden */
     #widescreen-img {
         display: block;
         width: 100%;
@@ -458,6 +483,7 @@ footer a {
         display: none;
     }
 
+    /* För att få länken på rätt plats */
     #link2 {
     display: block;
     color: black;
@@ -466,16 +492,17 @@ footer a {
     margin-left: 30px;
 }
 
-    
     .card-text h2 {
         font-size: 14px;
     }
 
+    /* Tar bort innehållet av text, eftersom det tar för mycket plats */
     .card-text p {
         font-size: 10px;
         display: none;
     }
 
+    /* Lägger till en kolumn för att ge bättre utseende på formuläret */
     #form-text {
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -521,8 +548,56 @@ footer a {
     .card {
         padding-right: 5px;
     }
+
+    /* Texten får plats igen */
     .card-text p {
         font-size: 10px;
         display: block;
     }
+
+    article {
+    padding: 60px;
+}
+}
+
+/* Här börjar det som endast gäller about.html */
+
+.about {
+    background-color: var(--primary-color);
+    padding: 22px;
+}
+
+.about p {
+    padding: 6px;
+}
+
+.professions {
+    background-color: var(--neutral-color);
+    border-radius: 10px;
+    margin: 30px;
+}
+
+.professions img {
+    width: 100%;
+    height: auto;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.profession-card h2{
+font-weight: 400;
+font-size: 26px;
+padding: 26px 20px 0px;
+text-align: center;
+}
+
+.profession-card p {
+    padding: 0px 20px;
+    text-align: left;
+    font-size: 12px;
+}
+
+.profession-card li {
+    font-size: 12px;
+
 }
