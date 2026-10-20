@@ -1,7 +1,7 @@
 "use strict";
 const hiddenMenu = document.querySelector(".hiddenlinks");
 const hamburgerButton = document.querySelector("#hamburgerMenu");
-const wideScreen = window.matchMedia("(width <=760px)");
+const wideScreen = window.matchMedia("(width <=860px)");
 
 
 hamburgerButton.addEventListener("click", function() {
