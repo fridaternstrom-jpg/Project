@@ -122,7 +122,11 @@ nav li {
     color: black;
     font-size: 9px;
     font-weight: 700;
-    margin: 0px 50px 280px 50px;
+    margin-left: 60px;
+}
+
+#link2 {
+    display: none;
 }
 
 article {
@@ -448,6 +452,14 @@ footer a {
         display: none;
     }
 
+    #link2 {
+    display: block;
+    color: black;
+    font-size: 12px;
+    font-weight: 700;
+    margin-left: 30px;
+}
+
     
     .card-text h2 {
         font-size: 14px;
@@ -485,7 +497,26 @@ footer a {
 
 #analyze-button {
     margin-top: 60px;
-    grid-column: 1/4
+    margin-bottom: 40px;
+    grid-column: 1/4;
+    padding: 15px 40px;
 }
 
+}
+
+@media (min-width: 1060px){
+
+.mainheader {
+    font-size: 40px;
+}
+.further {
+    font-size: 18px;
+}
+    .card {
+        padding-right: 5px;
+    }
+    .card-text p {
+        font-size: 10px;
+        display: block;
+    }
 }
