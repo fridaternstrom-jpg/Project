@@ -247,24 +247,28 @@ footer {
     background-color: var(--primary-color);
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-end;
+    gap: 10px;
     padding-bottom: 20px;
+    padding-top: 40px;
 }
 
 footer h3 {
     font-size: 18px;
     margin-bottom: 0;
     text-decoration: underline;
-    margin-top: 80px;
 }
 
 footer h4 {
     font-size: 14px;
     margin-bottom: 0;
+    margin-top: 0;
 }
 
 footer p {
     font-size: 12px;
     margin-top: 0;
+    margin-bottom: 0;
 }
 
 footer a {
@@ -276,6 +280,7 @@ footer a {
 #contact {
     display: flex;
     flex-direction: column;
+    margin-left: 10px;
 }
 
 #footerlogo {
@@ -285,6 +290,7 @@ footer a {
 #links {
     display: flex;
     flex-direction: column;
+    margin-right: 10px;
 }
 
 @media (min-width: 405px) {
