@@ -55,6 +55,10 @@ nav li {
     align-self: center;
 }
 
+#widescreen-img {
+    display: none;
+}
+
 #hero-img {
     background-image: url("/images/mapkid.jpg");
     background-size: cover;
@@ -282,28 +286,32 @@ footer a {
 @media (min-width: 405px) {
 
     .card h2 {
-    font-size: 16px;
-}
+        font-size: 16px;
+    }
+
     .card p {
-    font-size: 11px;
-}
-#results-text {
-    font-size: 16px;
-}
+        font-size: 11px;
+    }
+
+    #results-text {
+        font-size: 16px;
+    }
 }
 
-@media (min-width: 485px){
-.mainheader {
-    font-size: 40px;
-    margin-top: 60px;
-}
-.further {
-    font-size: 20px;
-}
+@media (min-width: 485px) {
+    .mainheader {
+        font-size: 40px;
+        margin-top: 60px;
+    }
+
+    .further {
+        font-size: 20px;
+    }
+
     .card-text {
-display: flex;
-flex-direction: column;
-justify-content: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
     .card h2 {
@@ -315,43 +323,44 @@ justify-content: center;
     }
 
     article h2 {
-    font-size: 26px;
-}
+        font-size: 26px;
+    }
 
-article p {
-    font-size: 18px;
-}
+    article p {
+        font-size: 18px;
+    }
 
-#form-head h3 {
-font-size: 22px;
-}
+    #form-head h3 {
+        font-size: 22px;
+    }
 
-#form-head p {
-    font-size: 14px;
-}
+    #form-head p {
+        font-size: 14px;
+    }
 
-.question-card h4 {
-    font-size: 14px;
-}
+    .question-card h4 {
+        font-size: 14px;
+    }
 
-.question-card {
-    padding: 2px 5px 15px 10px;
-    margin: 20px 60px 10px;
-}
+    .question-card {
+        padding: 2px 5px 15px 10px;
+        margin: 20px 60px 10px;
+    }
 
 }
 
 @media (min-width: 760px) {
 
-#hamburgerMenu {
-    display: none;
-}
+    #hamburgerMenu {
+        display: none;
+    }
 
-nav {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-}
+    nav {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+
     .hiddenlinks {
         display: flex;
         flex-direction: row;
@@ -362,6 +371,54 @@ nav {
         border-radius: 10px;
         padding: 5px 10px;
         margin: 0px 10px;
+    }
+
+    #hero-img {
+        background-image: none;
+        background-color: var(--primary-color);
+    }
+
+    .main-text {
+        display: grid;
+        grid-template-columns: 1fr 1fr 2fr;
+    }
+
+    #widescreen-img {
+        display: block;
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1/3;
+    }
+
+#widescreen-img img {
+    width: 100%;
+    height: auto;
+}
+
+    .mainheader {
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 30px;
+        margin-top: 0;
+        margin-bottom: 0;
+        padding-top: 20px;
+    }
+
+    .further {
+        grid-column: 2;
+        grid-row: 1;
+        margin-top: 100px;
+        font-size: 14px;
+    }
+
+    #info-cards {
+        grid-column: 3;
+        grid-row: 1/3;
+        gap: 2px;
+    }
+
+    #link {
+        display: none;
     }
 
 }
