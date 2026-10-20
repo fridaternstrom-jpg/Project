@@ -335,15 +335,12 @@ footer a {
 
 @media (min-width: 485px) {
    
-   /* För att få bättre placering på innehållet ovanpå bilden */
     .mainheader {
         font-size: 40px;
-        margin-top: 60px;
     }
 
     .further {
         font-size: 20px;
-        margin-bottom: 80px;
     }
 
     /* Placerar texten i infokorten bättre */
@@ -368,6 +365,10 @@ footer a {
     article p {
         font-size: 18px;
     }
+
+#form-background {
+     height: 540px;
+}
 
     #form-head h3 {
         font-size: 22px;
@@ -444,31 +445,24 @@ footer a {
         border-radius: 10px;
         padding: 5px 10px;
         margin: 0px 10px;
-    }*/
-
-    /* Tar bort bakgrundsbilden, men behåller en blå bakgrund i dess ställe */
-    #hero-img {
-        background-image: none;
-        background-color: var(--primary-color);
-        height: auto;
     }
 
-    .main-text {
+    #hero-box {
+        position: static;
+        background-color: var(--primary-color);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .hero-content {
+        display: flex;
         position: static;
     }
 
-    /* Ersätter bakgrundsbilden */
-    #widescreen-img {
+    #hero-img {
         display: block;
-        width: 100%;
+        width: 100px;
         grid-column: 1;
-    }
-
-    #widescreen-img img {
-        width: 100%;
-        height: 100%;
+        grid-row: 1;
     }
 
     .mainheader {
