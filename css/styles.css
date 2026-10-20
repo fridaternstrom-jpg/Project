@@ -84,6 +84,10 @@ nav li {
     width: 100%;
 }
 
+#hero-imgsmall {
+    display: none;
+}
+
 .mainheader {
     font-size: 34px;
     padding: 50px 25px 0px;
@@ -145,7 +149,7 @@ nav li {
     display: none;
 }
 
- /* Textmassan för förstasidan */
+/* Textmassan för förstasidan */
 article {
     padding: 25px;
 }
@@ -318,7 +322,8 @@ footer a {
 /* Under följer media queries */
 
 @media (min-width: 405px) {
-/* Gör texten större på sidan */
+
+    /* Gör texten större på sidan */
     .card h2 {
         font-size: 16px;
     }
@@ -330,11 +335,11 @@ footer a {
     #results-text {
         font-size: 16px;
     }
-    
+
 }
 
 @media (min-width: 485px) {
-   
+
     .mainheader {
         font-size: 40px;
     }
@@ -366,9 +371,9 @@ footer a {
         font-size: 18px;
     }
 
-#form-background {
-     height: 540px;
-}
+    #form-background {
+        height: 540px;
+    }
 
     #form-head h3 {
         font-size: 22px;
@@ -414,6 +419,7 @@ footer a {
     #form-background {
         height: 600px;
     }
+
     .question-card {
         padding: 5px 5px 20px 20px;
     }
@@ -421,7 +427,7 @@ footer a {
 
 @media (min-width: 860px) {
 
-/* Här börjar en horisontell meny uppe i nav */
+    /* Här börjar en horisontell meny uppe i nav */
     #hamburgerMenu {
         display: none;
     }
@@ -432,9 +438,10 @@ footer a {
         justify-content: space-between;
     }
 
-.menu {
-    display: block;
-}
+    .menu {
+        display: block;
+    }
+
     .menu ul {
         display: flex;
         flex-direction: row;
@@ -451,16 +458,23 @@ footer a {
         position: static;
         background-color: var(--primary-color);
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-    .hero-content {
-        display: flex;
-        position: static;
+        grid-template-columns: 1fr 2fr;
     }
 
+    .hero-content {
+        position: static;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /*Döljer bild för att den andra ska synas istället*/
     #hero-img {
+        display: none;
+    }
+
+    #hero-imgsmall {
         display: block;
-        width: 100px;
+        width: 100%;
         grid-column: 1;
         grid-row: 1;
     }
@@ -477,12 +491,11 @@ footer a {
     }
 
     .first-text {
-        grid-column: 2;
-        grid-row: 1;
+        grid-column: 1;
     }
 
     #info-cards {
-        grid-column: 3;
+        grid-column: 2;
         gap: 2px;
     }
 
@@ -492,12 +505,12 @@ footer a {
 
     /* För att få länken på rätt plats */
     #link2 {
-    display: block;
-    color: black;
-    font-size: 12px;
-    font-weight: 700;
-    margin-left: 30px;
-}
+        display: block;
+        color: black;
+        font-size: 12px;
+        font-weight: 700;
+        margin-left: 30px;
+    }
 
     .card-text h2 {
         font-size: 14px;
@@ -511,47 +524,49 @@ footer a {
 
     /* Lägger till en kolumn för att ge bättre utseende på formuläret */
     #form-text {
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .question-card {
+        margin-top: 60px;
+    }
+
+    #card1 {
+        grid-column: 3;
+    }
+
+    #card2 {
+        grid-column: 3;
+    }
+
+    #card3 {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    #card4 {
+        grid-column: 2;
+    }
+
+    #analyze-button {
+        margin-top: 60px;
+        margin-bottom: 40px;
+        grid-column: 1/4;
+        padding: 15px 40px;
+    }
+
 }
 
-.question-card {
-    margin-top: 60px;
-}
+@media (min-width: 1060px) {
 
-#card1 {
-    grid-column: 3;
-}
+    .mainheader {
+        font-size: 40px;
+    }
 
-#card2 {
-    grid-column: 3;
-}
+    .further {
+        font-size: 18px;
+    }
 
-#card3 {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-#card4 {
-    grid-column: 2;
-}
-
-#analyze-button {
-    margin-top: 60px;
-    margin-bottom: 40px;
-    grid-column: 1/4;
-    padding: 15px 40px;
-}
-
-}
-
-@media (min-width: 1060px){
-
-.mainheader {
-    font-size: 40px;
-}
-.further {
-    font-size: 18px;
-}
     .card {
         padding-right: 5px;
     }
@@ -563,8 +578,8 @@ footer a {
     }
 
     article {
-    padding: 60px;
-}
+        padding: 60px;
+    }
 }
 
 /* Här börjar det som endast gäller about.html */
@@ -591,6 +606,7 @@ footer a {
     display: flex;
     flex-direction: column;
 }
+
 .profession-card img {
     width: 100%;
     height: 120px;
@@ -599,11 +615,11 @@ footer a {
     margin-top: 10px;
 }
 
-.profession-card h2{
-font-weight: 400;
-font-size: 26px;
-padding: 5px 20px 0px;
-text-align: center;
+.profession-card h2 {
+    font-weight: 400;
+    font-size: 26px;
+    padding: 5px 20px 0px;
+    text-align: center;
 }
 
 .profession-card p {
