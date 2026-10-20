@@ -11,6 +11,7 @@ body {
     font-family: "Inria Serif", serif;
     font-weight: 400;
 }
+
 /* Header och meny-rad */
 header {
     padding: 10px;
@@ -69,16 +70,18 @@ nav li {
 }
 
 /* Här börjar main-innehållet */
-#hero-img {
-    background-image: url("/images/mapkid.jpg");
-    background-size: cover;
-    background-position: center;
+
+#hero-box {
     position: relative;
-    height: 250vw;
 }
 
-.main-text {
+.hero-content {
     position: absolute;
+    top: 0;
+}
+
+#hero-img {
+    width: 100%;
 }
 
 .mainheader {
@@ -327,6 +330,7 @@ footer a {
     #results-text {
         font-size: 16px;
     }
+    
 }
 
 @media (min-width: 485px) {
