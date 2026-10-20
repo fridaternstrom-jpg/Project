@@ -16,6 +16,11 @@ header {
     padding: 10px;
 }
 
+.solidbar {
+    display: flex;
+    justify-content: space-between;
+}
+
 nav a {
     text-decoration: none;
     color: black;
@@ -26,15 +31,17 @@ nav li {
     padding: 5px;
 }
 
-.closed-menu {
-    display: flex;
-    justify-content: space-between;
+/* Gömda länkar, inuti menyn */
+.menu {
+    display: none;
 }
 
-/* Gömda länkar, inuti menyn */
-.hiddenlinks {
-    display: none;
-    padding: 10px 10px;
+.menu.open {
+    display: block;
+}
+
+.menu.open ul {
+    padding-left: 0px;
 }
 
 #black-logo {
@@ -409,29 +416,31 @@ footer a {
 
 @media (min-width: 860px) {
 
-    /* Här börjar en horisontell meny uppe i nav */
+/* Här börjar en horisontell meny uppe i nav */
     #hamburgerMenu {
         display: none;
     }
 
-    nav {
+    header {
         display: flex;
         flex-direction: row-reverse;
         justify-content: space-between;
     }
 
-    /* Länkarna syns istället för döljs */
-    .hiddenlinks {
+.menu {
+    display: block;
+}
+    .menu ul {
         display: flex;
         flex-direction: row;
     }
 
-    .hiddenlinks li {
+    .menu li {
         background-color: var(--primary-color);
         border-radius: 10px;
         padding: 5px 10px;
         margin: 0px 10px;
-    }
+    }*/
 
     /* Tar bort bakgrundsbilden, men behåller en blå bakgrund i dess ställe */
     #hero-img {
