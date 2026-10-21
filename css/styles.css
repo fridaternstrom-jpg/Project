@@ -271,34 +271,33 @@ article p {
 
 footer {
     background-color: var(--primary-color);
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 20px;
     padding-top: 40px;
+    align-items: end;
 }
 
 footer h3 {
-    font-size: 18px;
+    font-size: 14px;
     margin-bottom: 0;
     text-decoration: underline;
 }
 
 footer h4 {
-    font-size: 14px;
+    font-size: 10px;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 footer p {
-    font-size: 12px;
+    font-size: 8px;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 footer a {
-    font-size: 12px;
+    font-size: 8px;
     color: black;
     text-decoration: none;
 }
@@ -310,12 +309,13 @@ footer a {
 }
 
 #footerlogo {
-    width: 30%;
+    width: 100%;
 }
 
 #links {
     display: flex;
     flex-direction: column;
+    justify-self: end;
     margin-right: 10px;
 }
 
