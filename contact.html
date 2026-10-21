@@ -42,29 +42,31 @@
 <h2>Kontaktformulär</h2>
 
 <div id="form-content">
-<div id="name-input"><label for="name">Namn:</label>
-<input type="text" id="name" name="name"></div>
+<label for="name">Namn:</label>
+<input type="text" id="name" name="name">
 <br>
-<div id="email-input"><label for="email">E-post:</label>
-<input type="email" id="email" name="email"></div>
+<label for="email">E-post:</label>
+<input type="email" id="email" name="email">
 <br>
-<label for="children">Antal barn i familjen:</label>
-<input type="number" id="children" name="children" min="1" max="10">
+<label for="children" class="long-label">Antal barn i familjen:</label>
+<input type="number" class="child-input" id="children" name="children" min="1" max="10">
 <br>
 <label for="age">Ålder på barn</label>
-<input type="number" id="age" name="age" min="0" max="99">
+<input type="number" class="small-input" id="age" name="age" min="0" max="99">
 <br>
-<label for="describe">Beskriv kortfattat vad ni hade önskat hjälp med:</label>
-<input type="textarea" id="describe" name="describe"></div>
+<p id="describe-text">Beskriv kortfattat vad ni hade önskat hjälp med:</p>
+<textarea id="describe" name="describe" rows="4" cols="50" maxlength="250"
+ placeholder="Max 250 tecken"></textarea>
 
-<button type="submit">Skicka</button>
+<button type="submit" id="submit-button">Skicka</button>
+</div>
 </form>
 
 
 <div id="contact-response"></div>
 
-<p>Nyfiken på vem som kan komma att kontakta er?</p>
-<a href="about.html">Läs mer om vår personal</a>
+<p id="foot-note">Nyfiken på vem som kan komma att kontakta er?</p>
+<a id="read-more" href="about.html">Läs mer om vår personal</a>
         
     </main>
     <footer>

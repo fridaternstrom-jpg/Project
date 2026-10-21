@@ -707,21 +707,67 @@ main img {
 
 #form-content {
     padding: 0px 10px 0px 20px;
-    font-size: 14px;
-    display: flex;
-    flex-direction: column;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
 }
 
-#contact-form input[type=text] {
-    margin: 5px 0px;
+#form-content label {
+    grid-column: 1;
+}
+
+#form-content input {
+    grid-column: 2;
+    margin: 0px 0px 10px;
     border-style: none;
-    width: 60px;
     padding: 2px;
 }
 
-#contact-form input[type=email] {
-    margin: 5px 0px;
-    border-style: none;
-    width: 60px;
-    padding: 2px;
+#submit-button {
+    grid-column: 1/3;
+    margin: 16px 60px;
+}
+
+#form-content .long-label {
+    grid-column: 1/3;
+    grid-row: 5;
+}
+
+#form-content .small-input {
+    width: 25%;
+    justify-self: center;
+}
+
+#form-content .child-input {
+    width: 25%;
+    grid-row: 5;
+    justify-self: center;
+}
+
+#form-content #describe-text {
+    grid-column: 1/3;
+    margin-right: 20px;
+}
+
+#form-content #describe {
+    grid-column: 1/3;
+}
+
+#foot-note {
+    margin: 30px 30px 5px;
+    font-size: 12px;
+    text-align: center;
+}
+
+#read-more {
+    background-color: var(--highlight);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 13px 20px;
+    font-weight: 600;
+    width: 50%;
+    margin: 0px 40px 40px 70px;
+    display: block;
+    text-align: center;
 }
