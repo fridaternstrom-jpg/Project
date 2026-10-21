@@ -276,7 +276,7 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
     padding-bottom: 20px;
     padding-top: 40px;
-    align-items: end;
+    align-items: center;
 }
 
 footer h3 {
@@ -310,7 +310,8 @@ footer a {
 }
 
 #footerlogo {
-    width: 100%;
+    width: 70%;
+    justify-self: center;
 }
 
 #links {
@@ -392,6 +393,27 @@ footer a {
         padding: 2px 5px 15px 10px;
         margin: 20px 60px 10px;
     }
+
+    footer {
+        padding-bottom: 10px;
+    }
+
+    footer h3 {
+        font-size: 16px;
+    }
+
+    footer h4 {
+        font-size: 12px;
+    }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    footer a {
+        font-size: 10px;
+    }
+
 }
 
 @media (min-width: 690px) {
@@ -426,6 +448,10 @@ footer a {
 
     #results-text p{
         font-size: 16px;
+    }
+
+    footer {
+align-items: end;
     }
 }
 
