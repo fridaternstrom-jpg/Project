@@ -662,7 +662,7 @@ footer a {
 
 @media (min-width: 480px) {
 
-    /* För kontakt-sidan */
+    /* För about-sidan */
     .profession-card {
         margin-left: 10%;
         margin-right: 10%;
@@ -756,6 +756,10 @@ footer a {
     position: relative;
 }
 
+#long-img {
+    display: none;
+}
+
 main img {
     width: 100%;
     height: auto;
@@ -807,7 +811,11 @@ main img {
 
 #submit-button {
     grid-column: 1/3;
-    margin: 16px 60px;
+    margin: 14px 110px;
+    background-color: var(--highlight);
+    border-radius: 10px;
+    color: white;
+    padding: 5px;
 }
 
 #form-content .long-label {
@@ -841,7 +849,9 @@ main img {
     text-align: center;
 }
 
-#read-more {
+#read-more { 
+    display: block;
+    margin: 26px auto;
     background-color: var(--highlight);
     color: white;
     text-decoration: none;
@@ -849,7 +859,67 @@ main img {
     padding: 13px 20px;
     font-weight: 600;
     width: 50%;
-    margin: 0px 40px 40px 70px;
-    display: block;
     text-align: center;
 }
+
+/* För kontaktsidan */
+@media (min-width: 480px){
+#contact-form {
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+#contact-text {
+    right: 30%;
+}
+
+main img {
+    height: 280px;
+}
+
+}
+
+@media (min-width: 860px) {
+main img {
+    display: none;
+}
+
+#long-img {
+    display: block;
+}
+
+#contact-text {
+    right: 50%;
+}
+
+#contact-form {
+    margin-top: 60px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#contact-form h2 {
+    text-align: center;
+    font-size: 22px;
+}
+
+#form-content {
+    padding: 10px 20px 10px 30px;
+    font-size: 16px;
+}
+
+#foot-note {
+    font-size: 16px;
+}
+
+#read-more {
+    width: 30%;
+}
+}
+
+@media (min-width: 1040px) {
+    #contact-text {
+    right: 70%;
+}
+}
+
