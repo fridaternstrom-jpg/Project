@@ -392,7 +392,6 @@ footer a {
         padding: 2px 5px 15px 10px;
         margin: 20px 60px 10px;
     }
-
 }
 
 @media (min-width: 690px) {
@@ -660,6 +659,89 @@ footer a {
     text-align: center;
     padding: 13px 50px;
 }
+
+@media (min-width: 480px) {
+
+    /* För kontakt-sidan */
+    .profession-card {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .profession-card h2 {
+        font-size: 32px;
+    }
+
+    .profession-card p {
+        padding: 0px 20px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .profession-card li {
+        font-size: 16px;
+    }
+
+    .contact-info p {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #curious-link {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    #contact-button2 {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (min-width: 860px) {
+
+    /* Lägger yrkeskorten i två kolumner istället för en */
+    .professions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .profession-card {
+        margin: 20px;
+        justify-content: space-between;
+    }
+
+    .profession-card h2 {
+        font-size: 26px;
+    }
+
+    .profession-card p {
+        font-size: 15px;
+        text-align: left;
+    }
+
+    .profession-card li {
+        font-size: 14px;
+    }
+
+    .contact-info p {
+        font-size: 16px;
+    }
+
+    #curious-link {
+        margin-left: 40%;
+        margin-right: 32%;
+        padding-bottom: 8px;
+    }
+
+    #contact-button2 {
+        margin-left: 32%;
+        margin-right: 32%;
+    }
+
+}
+
+
 
 /* Här börjar css för sidan contact.html */
 
