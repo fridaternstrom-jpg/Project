@@ -394,10 +394,6 @@ footer a {
         margin: 20px 60px 10px;
     }
 
-    footer {
-        padding-bottom: 10px;
-    }
-
     footer h3 {
         font-size: 16px;
     }
@@ -453,6 +449,18 @@ footer a {
     footer {
 align-items: end;
     }
+
+    #contact {
+    justify-self: center;
+}
+
+#footerlogo {
+    width: 40%;
+}
+
+#links {
+    justify-self: center;
+}
 }
 
 @media (min-width: 860px) {
@@ -585,6 +593,26 @@ align-items: end;
         grid-column: 1/4;
         padding: 15px 40px;
     }
+
+footer {
+    padding-top: 10px;
+}
+
+footer h3{
+    font-size: 18px;
+}
+
+footer h4 {
+    font-size: 14px;
+}
+
+footer p {
+    font-size: 12px;
+}
+
+footer a {
+    font-size: 12px;
+}
 
 }
 
