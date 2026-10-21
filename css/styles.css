@@ -333,8 +333,8 @@ footer a {
         font-size: 11px;
     }
 
-    #results-text {
-        font-size: 16px;
+    #results-text p{
+        font-size: 14px;
     }
 
 }
@@ -423,6 +423,10 @@ footer a {
     .question-card {
         padding: 5px 5px 20px 20px;
     }
+
+    #results-text p{
+        font-size: 16px;
+    }
 }
 
 @media (min-width: 860px) {
@@ -488,6 +492,7 @@ footer a {
 
     .further {
         font-size: 12px;
+        margin-bottom: 10px;
     }
 
     .first-text {
@@ -580,6 +585,10 @@ footer a {
     article {
         padding: 60px;
     }
+
+    #form-background {
+        background-position: center;
+    }
 }
 
 /* Här börjar det som endast gäller about.html */
@@ -640,6 +649,9 @@ footer a {
 
 .contact-info p {
     font-size: 14px;
+    text-align: center;
+    margin-bottom: 0px;
+    padding-top: 40px;
 }
 
 #curious-link {
@@ -647,6 +659,8 @@ footer a {
     font-size: 14px;
     font-weight: 700;
     padding-bottom: 40px;
+    margin-top: 0;
+    margin-bottom: 40px;
 }
 
 #contact-button2 {
@@ -739,6 +753,14 @@ footer a {
         margin-right: 32%;
     }
 
+}
+
+@media (min-width: 1040px) {
+    .professions {
+        margin-left: 10%;
+        margin-right: 10%;
+        gap: 10%;
+    }
 }
 
 
@@ -871,6 +893,7 @@ footer a {
 
 #contact-text {
     right: 30%;
+    font-size: 20px;
 }
 
 #short-img {
