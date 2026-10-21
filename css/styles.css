@@ -631,3 +631,31 @@ footer a {
 .profession-card li {
     font-size: 12px;
 }
+
+.contact-info {
+    padding: 0px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info p {
+    font-size: 14px;
+}
+
+#curious-link {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 40px;
+}
+
+#contact-button2 {
+    background-color: var(--highlight);
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 13px 50px;
+}
