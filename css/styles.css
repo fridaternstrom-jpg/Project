@@ -3,6 +3,7 @@
     --highlight: #225469;
     --secondary-color: #678796;
     --neutral-color: #D9D9D9;
+    --seethrough-color: rgb(34, 84, 105, 0.8);
 }
 
 body {
@@ -658,4 +659,69 @@ footer a {
     margin-bottom: 40px;
     text-align: center;
     padding: 13px 50px;
+}
+
+/* Här börjar css för sidan contact.html */
+
+#contact-headline {
+    background-color: var(--primary-color);
+    padding: 36px;
+    text-align: center;
+    margin: 0;
+}
+
+#contact-hero {
+    position: relative;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+}
+
+#contact-text {
+    position: absolute;
+    bottom: 8%;
+    left: 10px;
+    right: 10%;
+    padding: 10px;
+    background-color: var(--seethrough-color);
+    border-radius: 10px;
+    color: white;
+}
+
+#contact-form {
+    margin: 20px;
+    background-color: var(--primary-color);
+    border-radius: 15px;
+}
+
+#contact-form h2 {
+    background-color: var(--highlight);
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    font-size: 18px;
+}
+
+#form-content {
+    padding: 0px 10px 0px 20px;
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact-form input[type=text] {
+    margin: 5px 0px;
+    border-style: none;
+    width: 60px;
+    padding: 2px;
+}
+
+#contact-form input[type=email] {
+    margin: 5px 0px;
+    border-style: none;
+    width: 60px;
+    padding: 2px;
 }

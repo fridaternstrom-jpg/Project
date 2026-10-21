@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hela Familjen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <script src="js/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/526849ee76.js" crossorigin="anonymous" defer></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+            <div class="solidbar"><button id="hamburgerMenu">
+            <i class="fa-solid fa-bars fa-xl" id="burger"></i>
+            <p id="hamburger-text">Meny</p>
+            </button>
+                <img id="black-logo" src="images/logodark2.svg" alt="logo av en blomma för Hela Familjen">
+</div>
+<nav class="menu">
+            <ul>
+                <li><a href="index.html">Startsidan</a></li>
+                <li><a href="about.html">Om oss</a></li>
+                <li><a href="contact.html">Kontakta oss</a></li>
+                
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+<h1 id="contact-headline">Vi kan hjälpa!</h1>
+<div id="contact-hero">
+<img src="images/spiderweb.jpg" alt="komplext spindelnät med grön bakgrund">
+<p id="contact-text">Ta kontakt med oss, så hittar vi en lösning för just er!</p>
+</div>
+<form id="contact-form">
+<h2>Kontaktformulär</h2>
+
+<div id="form-content">
+<div id="name-input"><label for="name">Namn:</label>
+<input type="text" id="name" name="name"></div>
+<br>
+<div id="email-input"><label for="email">E-post:</label>
+<input type="email" id="email" name="email"></div>
+<br>
+<label for="children">Antal barn i familjen:</label>
+<input type="number" id="children" name="children" min="1" max="10">
+<br>
+<label for="age">Ålder på barn</label>
+<input type="number" id="age" name="age" min="0" max="99">
+<br>
+<label for="describe">Beskriv kortfattat vad ni hade önskat hjälp med:</label>
+<input type="textarea" id="describe" name="describe"></div>
+
+<button type="submit">Skicka</button>
+</form>
+
+
+<div id="contact-response"></div>
+
+<p>Nyfiken på vem som kan komma att kontakta er?</p>
+<a href="about.html">Läs mer om vår personal</a>
+        
+    </main>
+    <footer>
+        <div id="contact">
+            <h3>Kontakt</h3>
+            <h4>Telefon:</h4>
+            <p>0703-296357</p>
+            <h4>E-post</h4>
+            <p>helafamiljen@skamed.se</p>
+        </div>
+        <img id="footerlogo" src="images/logolight.svg" alt="logo av en blomma för Hela Familjen">
+        <div id="links">
+            <h3>Länkar</h3>
+            <h4>Hjälp</h4>
+            <a href="#">www.hjalp.se</a>
+            <h4>1177:</h4>
+            <a href="https://www.1177.se">www.1177.se</a>
+        </div>
+    </footer>
+</body>
+
+</html>
