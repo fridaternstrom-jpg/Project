@@ -760,7 +760,7 @@ footer a {
     display: none;
 }
 
-main img {
+#short-img {
     width: 100%;
     height: auto;
 }
@@ -873,14 +873,14 @@ main img {
     right: 30%;
 }
 
-main img {
+#short-img {
     height: 280px;
 }
 
 }
 
 @media (min-width: 860px) {
-main img {
+#short-img {
     display: none;
 }
 
