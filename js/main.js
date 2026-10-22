@@ -42,6 +42,7 @@ if(checkedBoxes === 0){
 function checkFormInput() {
 
     resultsHeader.textContent = `Resultat:`;
+    resultsText.style.color = "black";
     resultsText.textContent = `Baserat på vad ni har angett er intresserade av kan vi
 hjälpa till med bland annat det här:`
 

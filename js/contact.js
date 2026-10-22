@@ -15,7 +15,7 @@ const contactForm = document.querySelector("#contact-form");
 const errorEl = document.querySelector("#error");
 const numberOfChildren = document.querySelector("#children");
 const newInputsEl = document.querySelector(".newInputs");
-
+const responseToForm = document.querySelector("#contact-response");
 
 //skapar nya inputs om användaren anger att den har mer än ett barn
 numberOfChildren.addEventListener("change", function() {
@@ -38,8 +38,18 @@ numberOfChildren.addEventListener("change", function() {
 //eventlyssnare för kontaktformuläret
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
+
+responseToForm.innerHTML ="";
     const nameInput = document.querySelector("#name").value;
     const emailInput = document.querySelector("#email").value;
 
+const response = document.createElement("p");
+response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
+    att kontakta er så snart vi kan!`);
 
-});
+responseToForm.appendChild(response);
+
+}
+
+
+);
