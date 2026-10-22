@@ -252,10 +252,29 @@ article p {
     align-items: center;
 }
 
-#results-text p {
+.results-header {
+    font-size: 28px;
+}
+
+.results-text {
     padding: 5px 20px;
     font-size: 12px;
     text-align: center;
+}
+
+.results-list {
+    background-color: var(--primary-color);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    font-size: 12px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+}
+
+#results-list li {
+    margin-left: 20px;
 }
 
 #contact-button {
@@ -334,7 +353,7 @@ footer a {
         font-size: 11px;
     }
 
-    #results-text p{
+    .results-text {
         font-size: 14px;
     }
 
@@ -442,25 +461,25 @@ footer a {
         padding: 5px 5px 20px 20px;
     }
 
-    #results-text p{
+    .results-text {
         font-size: 16px;
     }
 
     footer {
-align-items: end;
+        align-items: end;
     }
 
     #contact {
-    justify-self: center;
-}
+        justify-self: center;
+    }
 
-#footerlogo {
-    width: 40%;
-}
+    #footerlogo {
+        width: 40%;
+    }
 
-#links {
-    justify-self: center;
-}
+    #links {
+        justify-self: center;
+    }
 }
 
 @media (min-width: 860px) {
@@ -594,25 +613,25 @@ align-items: end;
         padding: 15px 40px;
     }
 
-footer {
-    padding-top: 10px;
-}
+    footer {
+        padding-top: 10px;
+    }
 
-footer h3{
-    font-size: 18px;
-}
+    footer h3 {
+        font-size: 18px;
+    }
 
-footer h4 {
-    font-size: 14px;
-}
+    footer h4 {
+        font-size: 14px;
+    }
 
-footer p {
-    font-size: 12px;
-}
+    footer p {
+        font-size: 12px;
+    }
 
-footer a {
-    font-size: 12px;
-}
+    footer a {
+        font-size: 12px;
+    }
 
 }
 
@@ -887,7 +906,7 @@ footer a {
 
 #submit-button {
     grid-column: 1/3;
-    margin: 14px 110px;
+    margin: 5% 25%;
     background-color: var(--highlight);
     border-radius: 10px;
     color: white;
@@ -925,7 +944,7 @@ footer a {
     text-align: center;
 }
 
-#read-more { 
+#read-more {
     display: block;
     margin: 26px auto;
     background-color: var(--highlight);
@@ -939,64 +958,63 @@ footer a {
 }
 
 /* För kontaktsidan */
-@media (min-width: 480px){
-#contact-form {
-    margin-left: 20%;
-    margin-right: 20%;
-}
+@media (min-width: 480px) {
+    #contact-form {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
 
-#contact-text {
-    right: 30%;
-    font-size: 20px;
-}
+    #contact-text {
+        right: 30%;
+        font-size: 20px;
+    }
 
-#short-img {
-    height: 280px;
-}
+    #short-img {
+        height: 280px;
+    }
 
 }
 
 @media (min-width: 860px) {
-#short-img {
-    display: none;
-}
+    #short-img {
+        display: none;
+    }
 
-#long-img {
-    display: block;
-}
+    #long-img {
+        display: block;
+    }
 
-#contact-text {
-    right: 50%;
-}
+    #contact-text {
+        right: 50%;
+    }
 
-#contact-form {
-    margin-top: 60px;
-    margin-left: 30%;
-    margin-right: 30%;
-}
+    #contact-form {
+        margin-top: 60px;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
 
-#contact-form h2 {
-    text-align: center;
-    font-size: 22px;
-}
+    #contact-form h2 {
+        text-align: center;
+        font-size: 22px;
+    }
 
-#form-content {
-    padding: 10px 20px 10px 30px;
-    font-size: 16px;
-}
+    #form-content {
+        padding: 10px 20px 10px 30px;
+        font-size: 16px;
+    }
 
-#foot-note {
-    font-size: 16px;
-}
+    #foot-note {
+        font-size: 16px;
+    }
 
-#read-more {
-    width: 30%;
-}
+    #read-more {
+        width: 30%;
+    }
 }
 
 @media (min-width: 1040px) {
     #contact-text {
-    right: 70%;
+        right: 70%;
+    }
 }
-}
-
