@@ -42,7 +42,7 @@
 <form id="contact-form">
 <h2>Kontaktformulär</h2>
 
-<div id="form-content">
+<div class="form-content">
 <label for="name">Namn:</label>
 <input type="text" id="name" name="name">
 <br>
@@ -52,9 +52,11 @@
 <label for="children" class="long-label">Antal barn i familjen:</label>
 <input type="number" class="child-input" id="children" name="children" min="1" max="6" placeholder="1">
 <br>
-<label for="age">Ålder på barn</label>
-<input type="number" class="small-input" id="age" name="age" min="0" max="99" placeholder="0"><div class="newInputs"></div>
-
+<label for="age">Ålder på barn:</label>
+<div class="ageInputs">
+<input type="number" class="small-input" id="age" name="age" min="0" max="99" placeholder="0">
+<div class="newInputs"></div>
+</div>
 <br>
 <p id="describe-text">Beskriv kortfattat vad ni hade önskat hjälp med:</p>
 <textarea id="describe" name="describe" rows="4" cols="50" maxlength="250"

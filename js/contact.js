@@ -16,27 +16,26 @@ const errorEl = document.querySelector("#error");
 const numberOfChildren = document.querySelector("#children");
 const newInputsEl = document.querySelector(".newInputs");
 
+
+//skapar nya inputs om användaren anger att den har mer än ett barn
 numberOfChildren.addEventListener("change", function() {
     newInputsEl.innerHTML = "";
 
-    const childrenSum = Number(numberOfChildren.value);
+    const childrenSum = Number(numberOfChildren.value); //omvandlar värdet till nummer
 
-    for (let i = 2; i <= childrenSum; i++) {
+    for (let i = 2; i <= childrenSum; i++) { //startar på två, eftersom vi redan har ett fält
         const newAgeInput = document.createElement("input");
         newAgeInput.type = "number";
         newAgeInput.min = "0";
         newAgeInput.max = "99";
-        newAgeInput.classList.add("small-input");
+        newAgeInput.placeholder = "0";
 
         newInputsEl.appendChild(newAgeInput);
-       
     }
-
-
 });
 
 
-
+//eventlyssnare för kontaktformuläret
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
     const nameInput = document.querySelector("#name").value;
