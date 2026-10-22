@@ -35,21 +35,33 @@ numberOfChildren.addEventListener("change", function() {
 });
 
 
-//eventlyssnare för kontaktformuläret
-contactForm.addEventListener("submit", function (event) {
-    event.preventDefault();
-
-responseToForm.innerHTML ="";
+function validateForm(){
     const nameInput = document.querySelector("#name").value;
     const emailInput = document.querySelector("#email").value;
 
+
+const errorArr=[];
+
+if(nameInput.trim() === "") {
+errorArr.push(`Du måste ange ett namn`)
+}
+}
+
+
+function respond(){
 const response = document.createElement("p");
 response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
     att kontakta er så snart vi kan!`);
 
 responseToForm.appendChild(response);
-
 }
 
+//eventlyssnare för kontaktformuläret
+contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+responseToForm.innerHTML ="";
+if (validateForm() === true) {
 
-);
+    respond();
+}else return;
+});
