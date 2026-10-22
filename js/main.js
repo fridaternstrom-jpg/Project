@@ -16,7 +16,6 @@ const analyzeButton = document.querySelector("#analyze-button");
 const resultsText = document.querySelector(".results-text");
 const resultsHeader = document.querySelector(".results-header");
 let formAnswers = document.querySelector(".form-answers");
-let concentrationCheck = document.querySelector("#concentration");
 
 //funktioner för formulär på indexsidan
 function validateCheckboxes() {
@@ -46,14 +45,14 @@ function checkFormInput() {
     resultsText.textContent = `Baserat på vad ni har angett er intresserade av kan vi
 hjälpa till med bland annat det här:`
 
+
     const ulEl = document.createElement("ul");
-    ulEl.classList.add("results-list");
     formAnswers.appendChild(ulEl);
 
     const answerArr = [];
 
     //här är för den första rutan, fler rutor får läggas till under sedan
-    if (concentrationCheck.checked === true) {
+    if (document.querySelector("#concentration").checked === true) {
         answerArr.push(`Förslag på fokus`);
         answerArr.push(`Sitta stilla`);
     }
@@ -63,12 +62,32 @@ hjälpa till med bland annat det här:`
         answerArr.push(`Vara tystare`);
     }
 
+    if (document.querySelector("#life").checked === true) {
+        answerArr.push(`Råd om livet`);
+        answerArr.push(`Bättre struktur`);
+    }
+
+    if (document.querySelector("#sleep").checked === true) {
+        answerArr.push(`Sov mer`);
+        answerArr.push(`Sov längre`);
+    }
+
+    if (document.querySelector("#communication").checked === true) {
+        answerArr.push(`Prata mer`);
+        answerArr.push(`Lyssna bättre`);
+    }
+
+    if (document.querySelector("#rules").checked === true) {
+        answerArr.push(`Mer regler`);
+        answerArr.push(`Strängare straff`);
+    }
+
     answerArr.forEach(answer => {
         const liEl= document.createElement("li");
         const liText = document.createTextNode(answer);
 
         liEl.appendChild(liText);
-        formAnswers.appendChild(liEl);
+        ulEl.appendChild(liEl);
     })
 }
 
