@@ -263,7 +263,7 @@ article p {
     text-align: center;
 }
 
-.form-answers ul{
+.form-answers ul {
     background-color: var(--primary-color);
     padding: 30px;
     display: flex;
@@ -452,16 +452,9 @@ footer a {
         font-size: 16px;
     }
 
-
-    
-
-#question-form {
-padding: 40px;
-}
-
-/* För att täcka också knappen */
+    /* För att täcka också knappen */
     #form-background {
-        height: 640px;
+        height: 600px;
     }
 
     .question-card {
@@ -666,8 +659,15 @@ padding: 40px;
         padding: 60px;
     }
 
+    /*För att få formuläret lite snyggare*/
+    #question-form {
+        padding: 0px 60px;
+    }
+
     #form-background {
         background-position: center;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
 }
 
@@ -905,6 +905,13 @@ padding: 40px;
 }
 
 #form-content input {
+    grid-column: 2;
+    margin: 0px 0px 10px;
+    border-style: none;
+    padding: 2px;
+}
+
+.newInputs input {
     grid-column: 2;
     margin: 0px 0px 10px;
     border-style: none;
