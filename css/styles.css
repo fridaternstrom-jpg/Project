@@ -262,7 +262,7 @@ article p {
     text-align: center;
 }
 
-.results-list {
+.form-answers {
     background-color: var(--primary-color);
     padding: 30px;
     display: flex;
@@ -273,7 +273,7 @@ article p {
     border-radius: 10px;
 }
 
-#results-list li {
+.form-answers li {
     margin-left: 20px;
 }
 
@@ -927,11 +927,6 @@ footer a {
     width: 25%;
     grid-row: 5;
     justify-self: center;
-}
-
-.newInputs {
-    input type: "number";
-    ="number" class="small-input" id="age" name="age" min="0" max="99" placeholder="0">
 }
 
 #form-content #describe-text {

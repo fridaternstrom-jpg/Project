@@ -20,14 +20,22 @@ let concentrationCheck = document.querySelector("#concentration");
 
 //funktioner för formulär på indexsidan
 function validateCheckboxes() {
-
-//om de är icheckade - returnera true och gå tillbaka till checkformInput
-
-//om inga rutor är icheckade- gör texten röd:
+    const boxesInput = document.querySelectorAll(".boxes");
     
-    resultsText.style.color = "red";
+    let checkedBoxes = 0;
 
-    return false;
+    boxesInput.forEach((eachCheckbox) => {
+        if (eachCheckbox.checked) {
+            checkedBoxes++;
+        console.log(checkedBoxes);
+}});
+
+if(checkedBoxes === 0){
+    resultsText.style.color = "red";
+        return false;
+    }
+
+    return true;
 }
 
 
@@ -42,33 +50,40 @@ hjälpa till med bland annat det här:`
     ulEl.classList.add("results-list");
     formAnswers.appendChild(ulEl);
 
-//här är för den första rutan, fler rutor får läggas till under sedan
+    const answerArr = [];
+
+    //här är för den första rutan, fler rutor får läggas till under sedan
     if (concentrationCheck.checked === true) {
-        const liEl = document.createElement("li");
-        const liText = document.createTextNode(`Förslag på fokus`);
+        answerArr.push(`Förslag på fokus`);
+        answerArr.push(`Sitta stilla`);
+    }
+
+    if (document.querySelector("#emotion").checked === true) {
+        answerArr.push(`Gråta mindre`);
+        answerArr.push(`Vara tystare`);
+    }
+
+    answerArr.forEach(answer => {
+        const liEl= document.createElement("li");
+        const liText = document.createTextNode(answer);
 
         liEl.appendChild(liText);
-        ulEl.appendChild(liEl);
-
-        const liEl2 = document.createElement("li");
-        const liText2 = document.createTextNode(`Sitta stilla`);
-
-        liEl2.appendChild(liText2);
-        ulEl.appendChild(liEl2);
-
-    }
-    else { return }
+        formAnswers.appendChild(liEl);
+    })
 }
 
 
 //Eventlyssnaren för en knapp som ska läsa av vilka rutor som är ikryssade i formulär
 analyzeButton.addEventListener("click", function (event) {
     event.preventDefault();
-
-    //här vill jag att den tittar om några rutor är ikryssade innan den går vidare
-    //if (validateCheckboxes() === true){}
-
-    checkFormInput();
+    resultsHeader.innerHTML = "";
+resultsText.innerHTML = `Fyll i formuläret ovan för att få några exempel på vad vi
+ kan hjälpa till med
+inom respektive intresseområde <br><br> Eller:`
+formAnswers.innerHTML = "";
+    if (validateCheckboxes() === true) {
+        checkFormInput();
+    }
 });
 
 
