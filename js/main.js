@@ -1,12 +1,16 @@
 "use strict";
+
+//element för menysystem
 const menuEl = document.querySelector(".menu");
 const hamburgerButton = document.querySelector("#hamburgerMenu");
 const wideScreen = window.matchMedia("(min-width: 860px)");
 
+//eventlyssnare för menyn
 hamburgerButton.addEventListener("click", function () {
     menuEl.classList.toggle("open");
-})
+});
 
+//element för formulär på indexsidan
 const questionForm = document.querySelector("#question-form");
 const analyzeButton = document.querySelector("#analyze-button");
 const resultsText = document.querySelector(".results-text");
@@ -14,7 +18,7 @@ const resultsHeader = document.querySelector(".results-header");
 let formAnswers = document.querySelector(".form-answers");
 let concentrationCheck = document.querySelector("#concentration");
 
-
+//funktioner för formulär på indexsidan
 function validateCheckboxes() {
 
 //om de är icheckade - returnera true och gå tillbaka till checkformInput
@@ -57,7 +61,7 @@ hjälpa till med bland annat det här:`
 }
 
 
-//Eventlyssnaren för en knapp som ska läsa av vilka rutor som är ikryssade
+//Eventlyssnaren för en knapp som ska läsa av vilka rutor som är ikryssade i formulär
 analyzeButton.addEventListener("click", function (event) {
     event.preventDefault();
 
@@ -66,3 +70,5 @@ analyzeButton.addEventListener("click", function (event) {
 
     checkFormInput();
 });
+
+
