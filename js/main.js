@@ -26,7 +26,6 @@ function validateCheckboxes() {
     boxesInput.forEach((eachCheckbox) => {
         if (eachCheckbox.checked) {
             checkedBoxes++;
-        console.log(checkedBoxes);
 }});
 
 if(checkedBoxes === 0){

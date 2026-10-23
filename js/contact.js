@@ -15,21 +15,22 @@ const contactForm = document.querySelector("#contact-form");
 const numberOfChildren = document.querySelector("#children");
 const newInputsEl = document.querySelector(".newInputs");
 const responseToForm = document.querySelector("#contact-response");
+const ageInputsEl = document.querySelector(".ageInputs");
 
 //skapar nya inputs om användaren anger att den har mer än ett barn
 numberOfChildren.addEventListener("change", function () {
-    newInputsEl.innerHTML = "";
+    ageInputsEl.innerHTML = "";
 
     const childrenSum = Number(numberOfChildren.value); //omvandlar värdet till nummer
 
-    for (let i = 2; i <= childrenSum; i++) { //startar på två, eftersom vi redan har ett fält
+    for (let i = 1; i <= childrenSum; i++) { //startar på två, eftersom vi redan har ett fält
         const newAgeInput = document.createElement("input");
         newAgeInput.type = "number";
         newAgeInput.min = "0";
         newAgeInput.max = "99";
         newAgeInput.placeholder = "0";
 
-        newInputsEl.appendChild(newAgeInput);
+        ageInputsEl.appendChild(newAgeInput);
     }
 });
 
@@ -93,5 +94,5 @@ contactForm.addEventListener("submit", function (event) {
     if (validateForm() === true) {
 
         respond();
-    } console.log("VI kom ända hit");
+    }
 });
