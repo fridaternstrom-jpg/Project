@@ -12,13 +12,12 @@ hamburgerButton.addEventListener("click", function () {
 
 //För kontaktformuläret på kontaktsidan
 const contactForm = document.querySelector("#contact-form");
-const errorEl = document.querySelector("#error");
 const numberOfChildren = document.querySelector("#children");
 const newInputsEl = document.querySelector(".newInputs");
 const responseToForm = document.querySelector("#contact-response");
 
 //skapar nya inputs om användaren anger att den har mer än ett barn
-numberOfChildren.addEventListener("change", function() {
+numberOfChildren.addEventListener("change", function () {
     newInputsEl.innerHTML = "";
 
     const childrenSum = Number(numberOfChildren.value); //omvandlar värdet till nummer
@@ -35,33 +34,64 @@ numberOfChildren.addEventListener("change", function() {
 });
 
 
-function validateForm(){
+function validateForm() {
     const nameInput = document.querySelector("#name").value;
     const emailInput = document.querySelector("#email").value;
+    const errorEl = document.querySelector("#error");
 
+    errorEl.innerHTML = "";
+    document.querySelector("#name").style.border = "none";
+    document.querySelector("#email").style.border = "none";
 
-const errorArr=[];
+    let errorArr = [];
 
-if(nameInput.trim() === "") {
-errorArr.push(`Du måste ange ett namn`)
+    if (nameInput.trim() === "") {
+        errorArr.push(`Du måste ange ett namn`);
+
+        document.querySelector("#name").style.border = "2px solid red";
+    }
+
+    if (emailInput.trim() === "") {
+        errorArr.push(`Ange en e-postadress så att vi kan nå er`);
+
+        document.querySelector("#email").style.border = "2px solid red";
+    }
+
+    errorArr.forEach(error => {
+        const errorUl = document.createElement("ul");
+        const errorLi = document.createElement("li");
+        const errorText = document.createTextNode(error);
+
+        console.log(errorArr);
+
+        errorLi.appendChild(errorText);
+        errorUl.appendChild(errorLi);
+        errorEl.appendChild(errorUl);
+    });
+
+    if (errorArr.length > 0) {
+        return false;
+    }
+
+    return true;
 }
-}
 
 
-function respond(){
-const response = document.createElement("p");
-response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
+function respond() {
+    const response = document.createElement("p");
+    response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
     att kontakta er så snart vi kan!`);
 
-responseToForm.appendChild(response);
+    responseToForm.appendChild(response);
 }
+
 
 //eventlyssnare för kontaktformuläret
 contactForm.addEventListener("submit", function (event) {
     event.preventDefault();
-responseToForm.innerHTML ="";
-if (validateForm() === true) {
+    responseToForm.innerHTML = "";
+    if (validateForm() === true) {
 
-    respond();
-}else return;
+        respond();
+    } console.log("VI kom ända hit");
 });
