@@ -982,16 +982,20 @@ footer a {
 
 .form-content .small-input {
     display: flex;
-    width: 18%;
     justify-self: left;
     grid-column: 2;
     grid-row: 6;
     margin-right: 5px;
 }
+
 .ageInputs {
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
+}
+
+number::placeholder{
+    color: red;
 }
 
 .newInputs {
@@ -1001,9 +1005,8 @@ footer a {
 }
 
 .form-content .child-input {
-    width: 20%;
     grid-row: 5;
-    justify-self: center;
+    justify-self: left;
 }
 
 .form-content #describe-text {
