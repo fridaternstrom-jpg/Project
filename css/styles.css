@@ -91,7 +91,7 @@ nav li {
 }
 
 .mainheader {
-    font-size: 34px;
+    font-size: 2.2rem;
     padding: 50px 25px 0px;
     margin-bottom: 5px;
     font-weight: 400;
@@ -101,7 +101,7 @@ nav li {
 .further {
     padding-right: 30px;
     padding-left: 30px;
-    font-size: 14px;
+    font-size: 0.8rem;
 }
 
 /* De tre infokorten på förstasidan */
@@ -127,21 +127,20 @@ nav li {
 }
 
 .card h2 {
-    grid-column: 2;
-    font-size: 12px;
+    font-size: 0.8rem;
     margin-bottom: 5px;
 }
 
 .card p {
     grid-column: 2;
-    font-size: 9px;
+    font-size: 0.65rem;
     margin: 0px 5px 0px 5px;
     padding: 0px 0px 8px 0px;
 }
 
 #link {
     color: black;
-    font-size: 9px;
+    font-size: 0.6rem;
     font-weight: 700;
     margin-left: 60px;
 }
@@ -157,11 +156,11 @@ article {
 }
 
 article h2 {
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 article p {
-    font-size: 14px;
+    font-size: 0.8rem;
     padding-bottom: 20px;
 }
 
@@ -179,14 +178,14 @@ article p {
 }
 
 #form-head p {
-    font-size: 11px;
+    font-size: 0.7rem;
     padding: 0px 12px 5px 5px;
     margin-top: 0;
 }
 
 #form-head h3 {
     margin-bottom: 0;
-    font-size: 18px;
+    font-size: 1.1rem;
 }
 
 #form-background {
@@ -215,12 +214,12 @@ article p {
 }
 
 .question-card label {
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 
 .question-card h4 {
     color: white;
-    font-size: 11px;
+    font-size: 0.75rem;
 }
 
 #card1 {
@@ -244,7 +243,7 @@ article p {
     padding: 8px 30px;
     font-family: "Inria Serif", serif;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 1.1rem;
     border-radius: 15px;
     justify-self: center;
     cursor: pointer;
@@ -260,12 +259,12 @@ article p {
 }
 
 .results-header {
-    font-size: 28px;
+    font-size: 1.8rem;
 }
 
 .results-text {
     padding: 5px 20px;
-    font-size: 12px;
+    font-size: 0.8rem;
     text-align: center;
 }
 
@@ -275,7 +274,7 @@ article p {
     display: flex;
     flex-direction: column;
     align-content: center;
-    font-size: 18px;
+    font-size: 1rem;
     margin-bottom: 40px;
     border-radius: 10px;
 }
@@ -307,25 +306,25 @@ footer {
 }
 
 footer h3 {
-    font-size: 14px;
+    font-size: 0.8rem;
     margin-bottom: 0;
     text-decoration: underline;
 }
 
 footer h4 {
-    font-size: 10px;
+    font-size: 0.6rem;
     margin-bottom: 0;
     margin-top: 0;
 }
 
 footer p {
-    font-size: 8px;
+    font-size: 0.5rem;
     margin-top: 0;
     margin-bottom: 0;
 }
 
 footer a {
-    font-size: 8px;
+    font-size: 0.5rem;
     color: black;
     text-decoration: none;
 }
@@ -353,32 +352,7 @@ footer a {
 
 /* Under följer media queries */
 
-@media (min-width: 405px) {
-
-    /* Gör texten större på sidan */
-    .card h2 {
-        font-size: 16px;
-    }
-
-    .card p {
-        font-size: 11px;
-    }
-
-    .results-text {
-        font-size: 14px;
-    }
-
-}
-
 @media (min-width: 485px) {
-
-    .mainheader {
-        font-size: 40px;
-    }
-
-    .further {
-        font-size: 20px;
-    }
 
     /* Placerar texten i infokorten bättre */
     .card-text {
@@ -387,57 +361,9 @@ footer a {
         justify-content: center;
     }
 
-    .card h2 {
-        font-size: 20px;
-    }
-
-    .card p {
-        font-size: 14px;
-    }
-
-    article h2 {
-        font-size: 26px;
-    }
-
-    article p {
-        font-size: 18px;
-    }
-
-    #form-background {
-        height: 540px;
-    }
-
-    #form-head h3 {
-        font-size: 22px;
-    }
-
-    #form-head p {
-        font-size: 14px;
-    }
-
-    .question-card h4 {
-        font-size: 14px;
-    }
-
     .question-card {
         padding: 2px 5px 15px 10px;
         margin: 20px 60px 10px;
-    }
-
-    footer h3 {
-        font-size: 16px;
-    }
-
-    footer h4 {
-        font-size: 12px;
-    }
-
-    footer p {
-        font-size: 10px;
-    }
-
-    footer a {
-        font-size: 10px;
     }
 
     #footerlogo {
@@ -446,36 +372,30 @@ footer a {
 
 }
 
-@media (min-width: 690px) {
+@media (min-width: 550px) {
 
-    .mainheader {
-        font-size: 48px;
+    /* frågeformuläret fästs i mitten av skärmen */
+#question-form {
+    margin: 0 auto;
+    max-width: 580px;
+}
+
+#form-background {
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
     }
+
+}
+
+@media (min-width: 690px) {
 
     /* För bättre placering på bilden */
     .further {
         margin-bottom: 120px;
     }
 
-    .question-card h4 {
-        font-size: 18px;
-    }
-
-    .question-card label {
-        font-size: 16px;
-    }
-
-    /* För att täcka också knappen */
-    #form-background {
-        height: 600px;
-    }
-
     .question-card {
         padding: 5px 5px 20px 20px;
-    }
-
-    .results-text {
-        font-size: 16px;
     }
 
     footer {
@@ -546,14 +466,12 @@ footer a {
     }
 
     .mainheader {
-        font-size: 30px;
         margin-top: 0;
         margin-bottom: 0;
         padding-top: 20px;
     }
 
     .further {
-        font-size: 12px;
         margin-bottom: 10px;
     }
 
@@ -574,27 +492,17 @@ footer a {
     #link2 {
         display: block;
         color: black;
-        font-size: 12px;
+        font-size: 0.7rem;
         font-weight: 700;
         margin-left: 30px;
     }
 
-    .card-text h2 {
-        font-size: 14px;
-    }
-
     /* Tar bort innehållet av text, eftersom det tar för mycket plats */
     .card-text p {
-        font-size: 10px;
         display: none;
     }
 
     /* Lägger till en kolumn för att ge bättre utseende på formuläret */
-
-#question-form {
-    margin: 0% 10%;
-}
-
     #form-text {
         grid-template-columns: 1fr 1fr 1fr;
     }
@@ -602,20 +510,6 @@ footer a {
     .question-card {
         margin: 40px 40px 10px;
         padding: 0px 0px 10px 5px;
-    }
-
-    .question-card h4 {
-        font-size: 14px;
-    }
-
-    .question-card label {
-        font-size: 14px;
-    }
-
-    #form-background {
-        height: 480px;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
     }
 
     #card1 {
@@ -650,37 +544,9 @@ footer a {
     margin-bottom: 20px;
 }
 
-    footer {
-        padding-top: 10px;
-    }
-
-    footer h3 {
-        font-size: 18px;
-    }
-
-    footer h4 {
-        font-size: 14px;
-    }
-
-    footer p {
-        font-size: 12px;
-    }
-
-    footer a {
-        font-size: 12px;
-    }
-
 }
 
 @media (min-width: 1060px) {
-
-    .mainheader {
-        font-size: 40px;
-    }
-
-    .further {
-        font-size: 18px;
-    }
 
     .card {
         padding-right: 5px;
@@ -688,7 +554,6 @@ footer a {
 
     /* Texten får plats igen */
     .card-text p {
-        font-size: 10px;
         display: block;
     }
 
