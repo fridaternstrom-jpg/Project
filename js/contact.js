@@ -34,7 +34,7 @@ numberOfChildren.addEventListener("change", function () {
     }
 });
 
-
+//validerar kontaktformulärets namn och e-postfält
 function validateForm() {
     const nameInput = document.querySelector("#name").value;
     const emailInput = document.querySelector("#email").value;
@@ -44,7 +44,7 @@ function validateForm() {
     document.querySelector("#name").style.border = "none";
     document.querySelector("#email").style.border = "none";
 
-    let errorArr = [];
+    let errorArr = [];  //tom array för errors
 
     if (nameInput.trim() === "") {
         errorArr.push(`Du måste ange ett namn`);
@@ -58,7 +58,7 @@ function validateForm() {
         document.querySelector("#email").style.border = "2px solid red";
     }
 
-    errorArr.forEach(error => {
+    errorArr.forEach(error => {     //eventuella errors läggs till i DOM
         const errorUl = document.createElement("ul");
         const errorLi = document.createElement("li");
         const errorText = document.createTextNode(error);
@@ -70,13 +70,14 @@ function validateForm() {
         errorEl.appendChild(errorUl);
     });
 
-    if (errorArr.length > 0) {
+    if (errorArr.length > 0) {      //om det finns några errors i arrayen efter loop - returnera falska och stoppa
         return false;
     }
 
-    return true;
+    return true;                    //fortsätt kör om inga errors hittas
 }
 
+//skapar ett svar till användaren så att den vet att informationen "skickats"
 function respond() {
     const response = document.createElement("p");
     response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
@@ -85,6 +86,7 @@ function respond() {
     responseToForm.appendChild(response);
 }
 
+//rensar formuläret
 function clearInput() {
     document.querySelector("#contact-form").reset();
     ageInputsEl.innerHTML="";
