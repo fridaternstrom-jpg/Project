@@ -336,9 +336,12 @@ footer a {
     margin-left: 10px;
 }
 
+#footerlogolink {
+   justify-self: center;
+}
+
 #footerlogo {
-    width: 70%;
-    justify-self: center;
+    width: 80px;
 }
 
 #links {
@@ -437,6 +440,10 @@ footer a {
         font-size: 10px;
     }
 
+    #footerlogo {
+    width: 100px;
+}
+
 }
 
 @media (min-width: 690px) {
@@ -477,10 +484,6 @@ footer a {
 
     #contact {
         justify-self: center;
-    }
-
-    #footerlogo {
-        width: 40%;
     }
 
     #links {
