@@ -87,6 +87,7 @@ function respond() {
 
 function clearInput() {
     document.querySelector("#contact-form").reset();
+    ageInputsEl.innerHTML="";
 }
 
 //eventlyssnare för kontaktformuläret
