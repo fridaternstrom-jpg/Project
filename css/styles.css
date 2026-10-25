@@ -579,7 +579,6 @@ footer a {
     background-color: var(--primary-color);
     padding: 22px;
     position: relative;
-
 }
 
 .about p {
@@ -607,6 +606,8 @@ footer a {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    max-width: 320px;
+    margin: 0 auto;
 }
 
 .profession-card img {
@@ -619,7 +620,7 @@ footer a {
 
 .profession-card h2 {
     font-weight: 400;
-    font-size: 26px;
+    font-size: 1.5rem;
     padding: 5px 20px 0px;
     text-align: center;
 }
@@ -627,11 +628,11 @@ footer a {
 .profession-card p {
     padding: 0px 20px;
     text-align: left;
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 
 .profession-card li {
-    font-size: 12px;
+    font-size: 0.7rem;
 }
 
 .contact-info {
@@ -641,19 +642,20 @@ footer a {
 }
 
 .contact-info p {
-    font-size: 14px;
+    font-size: 0.75rem;
     text-align: center;
     margin-bottom: 0px;
-    padding-top: 40px;
+    padding-top: 0;
+    margin-top: 0;
 }
 
 #curious-link {
     color: black;
-    font-size: 14px;
+    font-size: 0.75rem;
     font-weight: 700;
     padding-bottom: 40px;
-    margin-top: 0;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
@@ -675,24 +677,9 @@ footer a {
 .about img {
     width: 20%;
 }
-
-    .profession-card {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    .profession-card h2 {
-        font-size: 32px;
-    }
-
     .profession-card p {
         padding: 0px 20px;
         text-align: center;
-        font-size: 18px;
-    }
-
-    .profession-card li {
-        font-size: 16px;
     }
 
     .contact-info p {
@@ -723,25 +710,11 @@ footer a {
     }
 
     .profession-card {
-        margin: 20px;
         justify-content: space-between;
     }
 
-    .profession-card h2 {
-        font-size: 26px;
-    }
-
     .profession-card p {
-        font-size: 15px;
         text-align: left;
-    }
-
-    .profession-card li {
-        font-size: 14px;
-    }
-
-    .contact-info p {
-        font-size: 16px;
     }
 
     #curious-link {
@@ -763,15 +736,7 @@ footer a {
     right: 10px;
     opacity: 80%;
 }
-
-    .professions {
-        margin-left: 10%;
-        margin-right: 10%;
-        gap: 10%;
-    }
 }
-
-
 
 /* Här börjar css för sidan contact.html */
 
