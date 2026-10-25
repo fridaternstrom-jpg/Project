@@ -59,6 +59,7 @@ nav li {
     margin: 10px;
     border: none;
     cursor: pointer;
+    align-items: center;
 }
 
 #burger {
@@ -947,6 +948,7 @@ footer a {
     border-top-right-radius: 15px;
     font-size: 18px;
 }
+
 
 .form-content {
     padding-left: 20px;
