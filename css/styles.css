@@ -336,7 +336,7 @@ footer a {
 }
 
 #footerlogolink {
-   justify-self: center;
+    justify-self: center;
 }
 
 #footerlogo {
@@ -367,20 +367,20 @@ footer a {
     }
 
     #footerlogo {
-    width: 100px;
-}
+        width: 100px;
+    }
 
 }
 
 @media (min-width: 550px) {
 
     /* frågeformuläret fästs i mitten av skärmen */
-#question-form {
-    margin: 0 auto;
-    max-width: 580px;
-}
+    #question-form {
+        margin: 0 auto;
+        max-width: 580px;
+    }
 
-#form-background {
+    #form-background {
         border-bottom-left-radius: 15px;
         border-bottom-right-radius: 15px;
     }
@@ -537,12 +537,12 @@ footer a {
     }
 
     .form-answers ul {
-    padding: 40px 80px;
-}
+        padding: 40px 80px;
+    }
 
-.form-answers li {
-    margin-bottom: 20px;
-}
+    .form-answers li {
+        margin-bottom: 20px;
+    }
 
 }
 
@@ -674,9 +674,10 @@ footer a {
 
     /* För about-sidan */
 
-.about img {
-    width: 20%;
-}
+    .about img {
+        width: 20%;
+    }
+
     .profession-card p {
         padding: 0px 20px;
         text-align: center;
@@ -695,12 +696,12 @@ footer a {
 
 @media (min-width: 860px) {
 
-.about img {
-    width: 15%;
-    top: 5px;
-    right: 5px;
-    opacity: 80%;
-}
+    .about img {
+        width: 15%;
+        top: 5px;
+        right: 5px;
+        opacity: 80%;
+    }
 
 
     /* Lägger yrkeskorten i två kolumner istället för en */
@@ -730,12 +731,12 @@ footer a {
 
 @media (min-width: 1040px) {
 
-.about img {
-    width: 12%;
-    top: 10px;
-    right: 10px;
-    opacity: 80%;
-}
+    .about img {
+        width: 12%;
+        top: 10px;
+        right: 10px;
+        opacity: 80%;
+    }
 }
 
 /* Här börjar css för sidan contact.html */
@@ -803,7 +804,7 @@ legend {
 
 .form-content {
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 0.65rem;
     display: grid;
     grid-template-columns: 1fr 2fr;
 }
@@ -835,7 +836,7 @@ legend {
 
 .form-content .small-input {
     display: flex;
-    
+
 }
 
 .ageInputs {
@@ -846,10 +847,6 @@ legend {
     flex-wrap: wrap;
     gap: 5px;
     margin-right: 0;
-}
-
-number::placeholder{
-    color: red;
 }
 
 .form-content .child-input {
@@ -872,7 +869,7 @@ textarea {
 }
 
 #error {
-   grid-column: 1/3;
+    grid-column: 1/3;
 }
 
 #error li {
@@ -881,19 +878,20 @@ textarea {
     font-weight: 700;
 }
 
-#contact-response p{
-text-align: center;
-font-size: 12px;
-background-color: var(--secondary-color);
-color: white;
-padding: 20px;
-margin: 30px ;
-border-radius: 15px;
+#contact-response p {
+    text-align: center;
+    font-size: 0.75rem;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 20px;
+    margin: 5% 30%;
+    border-radius: 15px;
+    font-weight: 700;
 }
 
 #foot-note {
     margin: 30px 30px 5px;
-    font-size: 12px;
+    font-size: 0.65rem;
     text-align: center;
 }
 
@@ -913,9 +911,9 @@ border-radius: 15px;
 /* För kontaktsidan */
 @media (min-width: 480px) {
     #short-img {
-        height: 280px;
+        max-height: 260px;
     }
-    
+
     #contact-form {
         max-width: 390px;
         margin: 40px auto;
@@ -923,14 +921,7 @@ border-radius: 15px;
 
     #contact-text {
         right: 30%;
-        font-size: 20px;
     }
-
-#contact-response p{
-font-size: 16px;
-margin: 5% 30%;
-}
-    
 
 }
 
@@ -954,21 +945,10 @@ margin: 5% 30%;
 
     #contact-form h2 {
         text-align: center;
-        font-size: 22px;
     }
 
     .form-content {
         padding: 10px 20px 10px 30px;
-        font-size: 16px;
-    }
-
-#contact-response p{
-font-size: 18px;
-margin: 5% 35%;
-}
-
-    #foot-note {
-        font-size: 16px;
     }
 
     #read-more {

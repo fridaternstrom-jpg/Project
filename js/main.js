@@ -54,33 +54,31 @@ hjälpa till med bland annat det här:`
 
     //om rutan är ikryssad, skicka svar till arrayen
     if (document.querySelector("#concentration").checked === true) {
-        answerArr.push(`Förslag på fokus`);
-        answerArr.push(`Sitta stilla`);
+        answerArr.push(`Planering av vardagsstruktur`);
+        answerArr.push(`Råd för avslappning, vila och aktivitet`);
     }
 
     if (document.querySelector("#emotion").checked === true) {
-        answerArr.push(`Gråta mindre`);
-        answerArr.push(`Vara tystare`);
+        answerArr.push(`Impulskontroll och känsloreglering - individuell utredning`);
     }
 
     if (document.querySelector("#life").checked === true) {
-        answerArr.push(`Råd om livet`);
-        answerArr.push(`Bättre struktur`);
+        answerArr.push(`Genomgång av familjens förutsättningar för en bättre vardag`);
+        answerArr.push(`Hembesök och strukturell planering därefter`);
     }
 
     if (document.querySelector("#sleep").checked === true) {
-        answerArr.push(`Sov mer`);
-        answerArr.push(`Sov längre`);
+        answerArr.push(`Praktiska tips och råd vid sömnproblem`);
     }
 
     if (document.querySelector("#communication").checked === true) {
-        answerArr.push(`Prata mer`);
-        answerArr.push(`Lyssna bättre`);
+        answerArr.push(`AKK - alternativ kommunikation, när inte talet räcker`);
+        answerArr.push(`Gruppträffar med andra i liknande situation`);
     }
 
     if (document.querySelector("#rules").checked === true) {
-        answerArr.push(`Mer regler`);
-        answerArr.push(`Strängare straff`);
+        answerArr.push(`Lågaffektivt bemötande - vad betyder det egentligen?`);
+        answerArr.push(`Information om skärmtid, regler och krav`);
     }
 
     answerArr.forEach(answer => {                   //gör listelement av alla svar och skriv ut
