@@ -167,6 +167,11 @@ article p {
 
 /* Formuläret efter användarens intresseval */
 
+#question-form legend {
+    padding: 20px 0px 0px;
+    margin: 0;
+}
+
 #form-head {
     background-color: var(--secondary-color);
     color: white;
@@ -439,7 +444,6 @@ footer a {
     .mainheader {
         font-size: 48px;
     }
-
 
     /* För bättre placering på bilden */
     .further {
