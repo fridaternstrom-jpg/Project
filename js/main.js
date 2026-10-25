@@ -18,17 +18,18 @@ const resultsHeader = document.querySelector(".results-header");
 let formAnswers = document.querySelector(".form-answers");
 
 //funktioner för formulär på indexsidan
+//den här kontrollerar om minst en ruta är ikryssad
 function validateCheckboxes() {
     const boxesInput = document.querySelectorAll(".boxes");
     
     let checkedBoxes = 0;
 
-    boxesInput.forEach((eachCheckbox) => {
+    boxesInput.forEach((eachCheckbox) => {      //kör igenom alla rutor och se vilka som är ikryssade
         if (eachCheckbox.checked) {
             checkedBoxes++;
 }});
 
-if(checkedBoxes === 0){
+if(checkedBoxes === 0){                         //om ingen är kryssad, låt användaren se att den kan kryssa i för att få svar
     resultsText.style.color = "red";
         return false;
     }
@@ -40,7 +41,7 @@ if(checkedBoxes === 0){
 //Det användaren ska få ut om den fyller i åtminstone en ruta
 function checkFormInput() {
 
-    resultsHeader.textContent = `Resultat:`;
+    resultsHeader.textContent = `Resultat:`;            //skriver ut till DOM
     resultsText.style.color = "black";
     resultsText.textContent = `Baserat på vad ni har angett er intresserade av kan vi
 hjälpa till med bland annat det här:`
@@ -49,9 +50,9 @@ hjälpa till med bland annat det här:`
     const ulEl = document.createElement("ul");
     formAnswers.appendChild(ulEl);
 
-    const answerArr = [];
+    const answerArr = [];       //tom array för svar på rutor
 
-    //här är för den första rutan, fler rutor får läggas till under sedan
+    //om rutan är ikryssad, skicka svar till arrayen
     if (document.querySelector("#concentration").checked === true) {
         answerArr.push(`Förslag på fokus`);
         answerArr.push(`Sitta stilla`);
@@ -82,7 +83,7 @@ hjälpa till med bland annat det här:`
         answerArr.push(`Strängare straff`);
     }
 
-    answerArr.forEach(answer => {
+    answerArr.forEach(answer => {                   //gör listelement av alla svar och skriv ut
         const liEl= document.createElement("li");
         const liText = document.createTextNode(answer);
 
@@ -96,11 +97,12 @@ hjälpa till med bland annat det här:`
 analyzeButton.addEventListener("click", function (event) {
     event.preventDefault();
     resultsHeader.innerHTML = "";
+    //neutraliserar eventuell röd text och rensar
 resultsText.innerHTML = `Fyll i formuläret ovan för att få några exempel på vad vi
  kan hjälpa till med
 inom respektive intresseområde <br><br> Eller:`
 formAnswers.innerHTML = "";
-    if (validateCheckboxes() === true) {
+    if (validateCheckboxes() === true) {        //om minst en ruta är ikryssad gå igenom formuläret
         checkFormInput();
     }
 });
