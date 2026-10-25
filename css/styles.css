@@ -940,6 +940,20 @@ footer a {
     border-radius: 15px;
 }
 
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+legend {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    top: -20px;
+}
+
 #contact-form h2 {
     background-color: var(--highlight);
     color: white;
@@ -1032,11 +1046,11 @@ textarea {
 
 #contact-response p{
 text-align: center;
-font-size: 20px;
+font-size: 12px;
 background-color: var(--secondary-color);
 color: white;
 padding: 20px;
-margin: 2% 40%;
+margin: 30px ;
 border-radius: 15px;
 }
 
@@ -1061,9 +1075,13 @@ border-radius: 15px;
 
 /* För kontaktsidan */
 @media (min-width: 480px) {
+    #short-img {
+        height: 280px;
+    }
+    
     #contact-form {
         max-width: 390px;
-        margin: 0 auto;
+        margin: 40px auto;
     }
 
     #contact-text {
@@ -1071,9 +1089,11 @@ border-radius: 15px;
         font-size: 20px;
     }
 
-    #short-img {
-        height: 280px;
-    }
+#contact-response p{
+font-size: 16px;
+margin: 5% 30%;
+}
+    
 
 }
 
@@ -1092,7 +1112,7 @@ border-radius: 15px;
 
     #contact-form {
         max-width: 540px;
-        margin: 0 auto;
+        margin: 50px auto;
     }
 
     #contact-form h2 {
@@ -1104,6 +1124,11 @@ border-radius: 15px;
         padding: 10px 20px 10px 30px;
         font-size: 16px;
     }
+
+#contact-response p{
+font-size: 18px;
+margin: 5% 35%;
+}
 
     #foot-note {
         font-size: 16px;
@@ -1121,6 +1146,6 @@ border-radius: 15px;
 
     #contact-form {
         max-width: 540px;
-        margin: 0 auto;
+        margin: 60px auto;
     }
 }

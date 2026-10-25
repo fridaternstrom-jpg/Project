@@ -77,7 +77,6 @@ function validateForm() {
     return true;
 }
 
-
 function respond() {
     const response = document.createElement("p");
     response.innerHTML = (`Tack för visat intresse! <br><br> Vi kommer
@@ -86,6 +85,9 @@ function respond() {
     responseToForm.appendChild(response);
 }
 
+function clearInput() {
+    document.querySelector("#contact-form").reset();
+}
 
 //eventlyssnare för kontaktformuläret
 contactForm.addEventListener("submit", function (event) {
@@ -94,5 +96,6 @@ contactForm.addEventListener("submit", function (event) {
     if (validateForm() === true) {
 
         respond();
+        clearInput();
     }
 });
