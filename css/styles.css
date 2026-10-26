@@ -707,7 +707,9 @@ footer a {
     /* Lägger yrkeskorten i två kolumner istället för en */
     .professions {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 400px 400px;
+        justify-content: center;
+        gap: 20px;
     }
 
     .profession-card {
@@ -736,6 +738,9 @@ footer a {
         top: 10px;
         right: 10px;
         opacity: 80%;
+    }
+    .professions {
+        gap: 80px;
     }
 }
 

@@ -23,7 +23,7 @@ numberOfChildren.addEventListener("change", function () {
 
     const childrenSum = Number(numberOfChildren.value); //omvandlar värdet till nummer
 
-    for (let i = 1; i <= childrenSum; i++) { //startar på två, eftersom vi redan har ett fält
+    for (let i = 1; i <= childrenSum; i++) { 
         const newAgeInput = document.createElement("input");
         newAgeInput.type = "number";
         newAgeInput.min = "0";
