@@ -356,6 +356,7 @@ footer a {
     #link {
         color: black;
     }
+}
 
     @media (min-width: 485px) {
 
@@ -683,7 +684,7 @@ footer a {
             padding-bottom: 20px;
         }
 
-        .question-card h4{
+        .question-card h4 {
             font-size: 0.8rem;
         }
 
@@ -697,13 +698,13 @@ footer a {
     }
 
     @media (min-width: 1300px) {
-.card-text h2 {
-    font-size: 1rem;
-}
-.card-text p {
-    font-size: 0.8rem;
-}
+        .card-text h2 {
+            font-size: 1rem;
+        }
 
+        .card-text p {
+            font-size: 0.8rem;
+        }
     }
 
     /* Här börjar det som endast gäller about.html */
@@ -753,7 +754,7 @@ footer a {
 
     .profession-card h2 {
         font-weight: 400;
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 5px 20px 0px;
         text-align: center;
     }
@@ -761,11 +762,11 @@ footer a {
     .profession-card p {
         padding: 0px 20px;
         text-align: left;
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .profession-card li {
-        font-size: 0.7rem;
+        font-size: 0.9rem;
     }
 
     .contact-info {
@@ -775,7 +776,7 @@ footer a {
     }
 
     .contact-info p {
-        font-size: 0.75rem;
+        font-size: 1rem;
         text-align: center;
         margin-bottom: 0px;
         padding-top: 0;
@@ -784,7 +785,7 @@ footer a {
 
     #curious-link {
         color: black;
-        font-size: 0.75rem;
+        font-size: 1rem;
         font-weight: 700;
         padding-bottom: 40px;
         margin-top: 10px;
@@ -871,6 +872,7 @@ footer a {
             top: 10px;
             right: 10px;
             opacity: 80%;
+            max-width: 200px;
         }
 
         .professions {
@@ -937,13 +939,13 @@ footer a {
         padding: 20px;
         border-top-left-radius: 15px;
         border-top-right-radius: 15px;
-        font-size: 18px;
+        font-size: 1.5rem;
     }
 
 
     .form-content {
         padding-left: 20px;
-        font-size: 0.65rem;
+        font-size: 0.8rem;
         display: grid;
         grid-template-columns: 1fr 2fr;
     }
@@ -1019,18 +1021,18 @@ footer a {
 
     #contact-response p {
         text-align: center;
-        font-size: 0.75rem;
+        font-size: 1rem;
         background-color: var(--secondary-color);
         color: white;
         padding: 20px;
-        margin: 5% 30%;
+        margin: 5% 20%;
         border-radius: 15px;
         font-weight: 700;
     }
 
     #foot-note {
         margin: 30px 30px 5px;
-        font-size: 0.65rem;
+        font-size: 1rem;
         text-align: center;
     }
 
@@ -1045,6 +1047,7 @@ footer a {
         font-weight: 600;
         width: 50%;
         text-align: center;
+        font-size: 0.9rem;
     }
 
     /* För kontaktsidan */
@@ -1061,6 +1064,10 @@ footer a {
         #contact-text {
             right: 30%;
         }
+
+        .form-content {
+        font-size: 1rem;
+    }
 
     }
 
