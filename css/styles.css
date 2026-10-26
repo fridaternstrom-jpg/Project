@@ -7,7 +7,6 @@
 }
 
 body {
-    background-color: yellow;
     margin: 0;
     display: block;
     font-family: "Inria Serif", serif;
@@ -92,8 +91,8 @@ nav li {
 }
 
 .mainheader {
-    font-size: 2.2rem;
-    padding: 50px 25px 0px;
+    font-size: 2.3rem;
+    padding: 20px 25px 0px;
     margin-bottom: 5px;
     font-weight: 400;
 }
@@ -102,7 +101,7 @@ nav li {
 .further {
     padding-right: 30px;
     padding-left: 30px;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* De tre infokorten på förstasidan */
@@ -140,8 +139,8 @@ nav li {
 }
 
 #link {
-    color: black;
-    font-size: 0.6rem;
+    color: white;
+    font-size: 0.8rem;
     font-weight: 700;
     margin-left: 60px;
 }
@@ -191,7 +190,7 @@ article p {
 
 #form-background {
     background-image: url(/images/smallerfield.jpg);
-    height: 520px;
+    height: 500px;
     background-position: bottom;
     background-size: cover;
     position: relative;
@@ -257,7 +256,6 @@ article p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10px;
 }
 
 .results-header {
@@ -265,14 +263,14 @@ article p {
 }
 
 .results-text {
-    padding: 10px;
+    padding: 5px 20px;
     font-size: 0.8rem;
     text-align: center;
 }
 
 .form-answers ul {
     background-color: var(--primary-color);
-    padding: 30px;
+    padding: 30px 60px;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -354,617 +352,763 @@ footer a {
 
 /* Under följer media queries */
 
-@media (min-width: 485px) {
-
-    /* Placerar texten i infokorten bättre */
-    .card-text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .question-card {
-        padding: 2px 5px 15px 10px;
-        margin: 20px 60px 10px;
-    }
-
-    #footerlogo {
-        width: 100px;
-    }
-
-}
-
-@media (min-width: 550px) {
-
-    /* frågeformuläret fästs i mitten av skärmen */
-    #question-form {
-        margin: 0 auto;
-        max-width: 580px;
-    }
-
-    #form-background {
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-    }
-
-}
-
-@media (min-width: 690px) {
-
-    /* För bättre placering på bilden */
-    .further {
-        margin-bottom: 120px;
-    }
-
-    .question-card {
-        padding: 5px 5px 20px 20px;
-    }
-
-    footer {
-        align-items: end;
-    }
-
-    #contact {
-        justify-self: center;
-    }
-
-    #links {
-        justify-self: center;
-    }
-}
-
-@media (min-width: 860px) {
-
-    /* Här börjar en horisontell meny uppe i nav */
-    #hamburgerMenu {
-        display: none;
-    }
-
-    header {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-    }
-
-    .menu {
-        display: block;
-    }
-
-    .menu ul {
-        display: flex;
-        flex-direction: row;
-    }
-
-    .menu li {
-        background-color: var(--primary-color);
-        border-radius: 10px;
-        padding: 5px 10px;
-        margin: 0px 10px;
-    }
-
-    #hero-box {
-        position: static;
-        background-color: var(--primary-color);
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-    }
-
-    .hero-content {
-        position: static;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    /*Döljer bild för att den andra ska synas istället*/
-    #hero-img {
-        display: none;
-    }
-
-    #hero-imgsmall {
-        display: block;
-        width: 100%;
-        grid-column: 1;
-        grid-row: 1;
-    }
-
-    .mainheader {
-        margin-top: 0;
-        margin-bottom: 0;
-        padding-top: 20px;
-    }
-
-    .further {
-        margin-bottom: 10px;
-    }
-
-    .first-text {
-        grid-column: 1;
-    }
-
-    #info-cards {
-        grid-column: 2;
-        gap: 2px;
-    }
-
+@media (min-width: 360px) {
     #link {
-        display: none;
-    }
-
-    /* För att få länken på rätt plats */
-    #link2 {
-        display: block;
         color: black;
-        font-size: 0.7rem;
-        font-weight: 700;
-        margin-left: 30px;
-    }
-
-    /* Tar bort innehållet av text, eftersom det tar för mycket plats */
-    .card-text p {
-        display: none;
-    }
-
-    /* Lägger till en kolumn för att ge bättre utseende på formuläret */
-    #form-text {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .question-card {
-        margin: 40px 40px 10px;
-        padding: 0px 0px 10px 5px;
-    }
-
-    #card1 {
-        grid-column: 3;
-    }
-
-    #card2 {
-        grid-column: 3;
-    }
-
-    #card3 {
-        grid-column: 2;
-        grid-row: 1;
-    }
-
-    #card4 {
-        grid-column: 2;
-    }
-
-    #analyze-button {
-        margin-top: 60px;
-        margin-bottom: 40px;
-        grid-column: 1/4;
-        padding: 15px 40px;
-    }
-
-    .form-answers ul {
-        padding: 40px 80px;
-    }
-
-    .form-answers li {
-        margin-bottom: 20px;
-    }
-
-}
-
-@media (min-width: 1060px) {
-
-    .card {
-        padding-right: 5px;
-    }
-
-    /* Texten får plats igen */
-    .card-text p {
-        display: block;
-    }
-
-    article {
-        padding: 60px;
-    }
-
-    /*För att få formuläret lite snyggare*/
-    #question-form {
-        padding: 0px 60px;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    #form-background {
-        background-position: center;
     }
 }
 
-/* Här börjar det som endast gäller about.html */
+    @media (min-width: 485px) {
 
-.about {
-    background-color: var(--primary-color);
-    padding: 22px;
-    position: relative;
-}
+        /* Placerar texten i infokorten bättre */
+        .card-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-.about p {
-    padding: 6px;
-}
+        .card h2 {
+            font-size: 1rem;
+        }
 
-.about img {
-    width: 50%;
-    max-height: 300px;
-    position: absolute;
-    top: 1px;
-    right: 1px;
-    opacity: 30%;
-}
+        .card p {
+            font-size: 0.75rem;
+        }
 
-.professions {
-    margin: 50px 30px;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
+        .question-card {
+            padding: 2px 5px 15px 10px;
+            margin: 20px 60px 10px;
+        }
 
-.profession-card {
-    background-color: var(--neutral-color);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    max-width: 320px;
-    margin: 0 auto;
-}
+        article h2 {
+            font-size: 1.7rem;
+        }
 
-.profession-card img {
-    width: 100%;
-    height: 120px;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    margin-top: 10px;
-}
+        article p {
+            font-size: 1rem;
+        }
 
-.profession-card h2 {
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 5px 20px 0px;
-    text-align: center;
-}
+        #footerlogo {
+            width: 100px;
+        }
 
-.profession-card p {
-    padding: 0px 20px;
-    text-align: left;
-    font-size: 0.7rem;
-}
+    }
 
-.profession-card li {
-    font-size: 0.7rem;
-}
+    @media (min-width: 550px) {
 
-.contact-info {
-    padding: 0px 32px;
-    display: flex;
-    flex-direction: column;
-}
+        /* frågeformuläret fästs i mitten av skärmen */
+        #question-form {
+            margin: 0 auto;
+            max-width: 560px;
+        }
 
-.contact-info p {
-    font-size: 0.75rem;
-    text-align: center;
-    margin-bottom: 0px;
-    padding-top: 0;
-    margin-top: 0;
-}
+        #form-background {
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+        }
 
-#curious-link {
-    color: black;
-    font-size: 0.75rem;
-    font-weight: 700;
-    padding-bottom: 40px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-}
+        #form-head p {
+            font-size: 0.9rem;
+        }
 
-#contact-button2 {
-    background-color: var(--highlight);
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: 600;
-    margin-bottom: 40px;
-    text-align: center;
-    padding: 13px 50px;
-}
+        #form-head h3 {
+            font-size: 1.4rem;
+        }
 
-@media (min-width: 480px) {
+        .question-card h4 {
+            font-size: 0.9rem;
+        }
 
-    /* För about-sidan */
+        .question-card label {
+            font-size: 0.9rem;
+        }
+
+        .results-text {
+            font-size: 1rem;
+        }
+
+        footer h3 {
+            font-size: 1.2rem;
+        }
+
+        footer h4 {
+            font-size: 1rem;
+        }
+
+        footer p {
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            font-size: 0.8rem;
+        }
+    }
+
+    @media (min-width: 690px) {
+
+        /* För bättre placering på bilden */
+        .mainheader {
+            margin-top: 80px;
+            font-size: 3.5rem
+        }
+
+        .further {
+            font-size: 1.8rem;
+            margin-bottom: 120px;
+        }
+
+        .card-text {
+            justify-content: flex-start;
+            gap: 20px;
+        }
+
+        .card-text h2 {
+            font-size: 1.8rem;
+        }
+
+        .card-text p {
+            font-size: 1.3rem;
+        }
+
+        footer {
+            align-items: end;
+        }
+
+        #contact {
+            justify-self: center;
+        }
+
+        #links {
+            justify-self: center;
+        }
+    }
+
+    @media (min-width: 860px) {
+
+        /* Här börjar en horisontell meny uppe i nav */
+        #hamburgerMenu {
+            display: none;
+        }
+
+        header {
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
+
+        .menu {
+            display: block;
+        }
+
+        .menu ul {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .menu li {
+            background-color: var(--primary-color);
+            border-radius: 10px;
+            padding: 5px 10px;
+            margin: 0px 10px;
+        }
+
+        #hero-box {
+            position: static;
+            background-color: var(--primary-color);
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+
+        .hero-content {
+            position: static;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        /*Döljer bild för att den andra ska synas istället*/
+        #hero-img {
+            display: none;
+        }
+
+        #hero-imgsmall {
+            display: block;
+            width: 100%;
+            grid-column: 1;
+            grid-row: 1;
+        }
+
+        .mainheader {
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-top: 20px;
+            font-size: 1.8rem;
+        }
+
+        .further {
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+
+        .first-text {
+            grid-column: 1;
+        }
+
+        #info-cards {
+            grid-column: 2;
+            gap: 2px;
+        }
+
+        #link {
+            display: none;
+        }
+
+        /* För att få länken på rätt plats */
+        #link2 {
+            display: block;
+            color: black;
+            font-size: 0.7rem;
+            font-weight: 700;
+            margin-left: 30px;
+        }
+
+        /* Tar bort innehållet av text, eftersom det tar för mycket plats */
+        .card-text p {
+            display: none;
+        }
+
+        .card-text h2 {
+            font-size: 0.8rem;
+        }
+
+        .card-text {
+            justify-content: center;
+        }
+
+        /* Lägger till en kolumn för att ge bättre utseende på formuläret */
+        #form-text {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #question-form {
+            max-width: 600px;
+        }
+
+        .question-card {
+            margin: 40px 40px 10px;
+            padding: 0px 0px 10px 5px;
+        }
+
+        .question-card h4 {
+            font-size: 0.7rem;
+        }
+
+        .question-card label {
+            font-size: 0.7rem;
+        }
+
+        #card1 {
+            grid-column: 3;
+        }
+
+        #card2 {
+            grid-column: 3;
+        }
+
+        #card3 {
+            grid-column: 2;
+            grid-row: 1;
+        }
+
+        #card4 {
+            grid-column: 2;
+        }
+
+        #analyze-button {
+            margin-top: 60px;
+            margin-bottom: 40px;
+            grid-column: 1/4;
+            padding: 15px 40px;
+        }
+
+        .form-answers ul {
+            padding: 40px 80px;
+        }
+
+        .form-answers li {
+            margin-bottom: 20px;
+        }
+
+    }
+
+    @media (min-width: 1060px) {
+
+        .mainheader {
+            font-size: 2.2rem;
+        }
+
+        .card {
+            padding-right: 5px;
+        }
+
+        /* Texten får plats igen */
+        .card-text p {
+            display: block;
+            font-size: 0.6rem;
+        }
+
+        .card-text {
+            gap: 0;
+        }
+
+        article {
+            padding: 40px 80px;
+        }
+
+        article h2 {
+            font-size: 2.2rem;
+        }
+
+        article p {
+            font-size: 1.4rem;
+        }
+
+        /*För att få formuläret lite snyggare*/
+        #question-form {
+            padding: 0px 60px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .question-card {
+            padding-left: 40px;
+            padding-bottom: 20px;
+        }
+
+        .question-card h4 {
+            font-size: 0.8rem;
+        }
+
+        .question-card label {
+            font-size: 0.8rem;
+        }
+
+        #form-background {
+            background-position: center;
+        }
+    }
+
+    @media (min-width: 1300px) {
+        .card-text h2 {
+            font-size: 1rem;
+        }
+
+        .card-text p {
+            font-size: 0.8rem;
+        }
+    }
+
+    /* Här börjar det som endast gäller about.html */
+
+    .about {
+        background-color: var(--primary-color);
+        padding: 22px;
+        position: relative;
+    }
+
+    .about p {
+        padding: 6px;
+    }
 
     .about img {
-        width: 20%;
+        width: 50%;
+        max-height: 300px;
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        opacity: 30%;
+    }
+
+    .professions {
+        margin: 50px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .profession-card {
+        background-color: var(--neutral-color);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        max-width: 320px;
+        margin: 0 auto;
+    }
+
+    .profession-card img {
+        width: 100%;
+        height: 120px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-top: 10px;
+    }
+
+    .profession-card h2 {
+        font-weight: 400;
+        font-size: 1.8rem;
+        padding: 5px 20px 0px;
+        text-align: center;
     }
 
     .profession-card p {
         padding: 0px 20px;
-        text-align: center;
+        text-align: left;
+        font-size: 0.9rem;
+    }
+
+    .profession-card li {
+        font-size: 0.9rem;
+    }
+
+    .contact-info {
+        padding: 0px 32px;
+        display: flex;
+        flex-direction: column;
     }
 
     .contact-info p {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-
-    #contact-button2 {
-        margin-left: 10%;
-        margin-right: 10%;
-    }
-}
-
-@media (min-width: 860px) {
-
-    .about img {
-        width: 15%;
-        top: 5px;
-        right: 5px;
-        opacity: 80%;
-    }
-
-
-    /* Lägger yrkeskorten i två kolumner istället för en */
-    .professions {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    .profession-card {
-        justify-content: space-between;
-    }
-
-    .profession-card p {
-        text-align: left;
+        font-size: 1rem;
+        text-align: center;
+        margin-bottom: 0px;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     #curious-link {
-        padding-bottom: 8px;
-    }
-
-    #contact-button2 {
-        margin-left: 32%;
-        margin-right: 32%;
-    }
-
-}
-
-@media (min-width: 1040px) {
-
-    .about img {
-        width: 12%;
-        top: 10px;
-        right: 10px;
-        opacity: 80%;
-    }
-}
-
-/* Här börjar css för sidan contact.html */
-
-#contact-headline {
-    background-color: var(--primary-color);
-    padding: 36px;
-    text-align: center;
-    margin: 0;
-}
-
-#contact-hero {
-    position: relative;
-}
-
-#long-img {
-    display: none;
-}
-
-#short-img {
-    width: 100%;
-    height: auto;
-}
-
-#contact-text {
-    position: absolute;
-    bottom: 8%;
-    left: 10px;
-    right: 10%;
-    padding: 10px;
-    background-color: var(--seethrough-color);
-    border-radius: 10px;
-    color: white;
-}
-
-#contact-form {
-    margin: 20px;
-    background-color: var(--primary-color);
-    border-radius: 15px;
-}
-
-fieldset {
-    border: none;
-    padding: 0;
-    margin: 0;
-}
-
-legend {
-    padding: 0;
-    margin: 0;
-    width: 100%;
-    position: relative;
-    top: -20px;
-}
-
-#contact-form h2 {
-    background-color: var(--highlight);
-    color: white;
-    padding: 20px;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    font-size: 18px;
-}
-
-
-.form-content {
-    padding-left: 20px;
-    font-size: 0.65rem;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-.form-content label {
-    grid-column: 1;
-}
-
-.form-content input {
-    grid-column: 2;
-    margin: 0px 60px 10px 0px;
-    border-style: none;
-    padding: 2px;
-}
-
-#submit-button {
-    grid-column: 1/3;
-    margin: 5% 25%;
-    background-color: var(--highlight);
-    border-radius: 10px;
-    color: white;
-    padding: 5px;
-}
-
-.form-content .long-label {
-    grid-column: 1/3;
-    grid-row: 5;
-}
-
-.form-content .small-input {
-    display: flex;
-
-}
-
-.ageInputs {
-    grid-column: 2;
-    grid-row: 6;
-    justify-self: right;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 5px;
-    margin-right: 0;
-}
-
-.form-content .child-input {
-    grid-row: 5;
-    justify-self: right;
-}
-
-.form-content #describe-text {
-    grid-column: 1/3;
-    margin-right: 20px;
-}
-
-.form-content #describe {
-    grid-column: 1/3;
-}
-
-textarea {
-    resize: none;
-    margin-right: 20px;
-}
-
-#error {
-    grid-column: 1/3;
-}
-
-#error li {
-    list-style: none;
-    color: darkred;
-    font-weight: 700;
-}
-
-#contact-response p {
-    text-align: center;
-    font-size: 0.75rem;
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 20px;
-    margin: 5% 30%;
-    border-radius: 15px;
-    font-weight: 700;
-}
-
-#foot-note {
-    margin: 30px 30px 5px;
-    font-size: 0.65rem;
-    text-align: center;
-}
-
-#read-more {
-    display: block;
-    margin: 26px auto;
-    background-color: var(--highlight);
-    color: white;
-    text-decoration: none;
-    border-radius: 15px;
-    padding: 13px 20px;
-    font-weight: 600;
-    width: 50%;
-    text-align: center;
-}
-
-/* För kontaktsidan */
-@media (min-width: 480px) {
-    #short-img {
-        max-height: 260px;
-    }
-
-    #contact-form {
-        max-width: 390px;
-        margin: 40px auto;
-    }
-
-    #contact-text {
-        right: 30%;
-    }
-
-}
-
-@media (min-width: 860px) {
-    #short-img {
-        display: none;
-    }
-
-    #long-img {
-        display: block;
-    }
-
-    #contact-text {
-        right: 50%;
-    }
-
-    #contact-form {
-        max-width: 540px;
-        margin: 50px auto;
-    }
-
-    #contact-form h2 {
+        color: black;
+        font-size: 1rem;
+        font-weight: 700;
+        padding-bottom: 40px;
+        margin-top: 10px;
+        margin-bottom: 10px;
         text-align: center;
     }
 
-    .form-content {
-        padding: 10px 20px 10px 30px;
+    #contact-button2 {
+        background-color: var(--highlight);
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        font-weight: 600;
+        margin-bottom: 40px;
+        text-align: center;
+        padding: 13px 50px;
     }
 
-    #read-more {
-        width: 30%;
-    }
-}
+    @media (min-width: 480px) {
 
-@media (min-width: 1040px) {
+        /* För about-sidan */
+
+        .about img {
+            width: 20%;
+        }
+
+        .profession-card p {
+            padding: 0px 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+
+        #contact-button2 {
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    @media (min-width: 860px) {
+
+        .about img {
+            width: 15%;
+            top: 5px;
+            right: 5px;
+            opacity: 80%;
+        }
+
+
+        /* Lägger yrkeskorten i två kolumner istället för en */
+        .professions {
+            display: grid;
+            grid-template-columns: 400px 400px;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .profession-card {
+            justify-content: space-between;
+        }
+
+        .profession-card p {
+            text-align: left;
+        }
+
+        #curious-link {
+            padding-bottom: 8px;
+        }
+
+        #contact-button2 {
+            margin-left: 32%;
+            margin-right: 32%;
+        }
+
+    }
+
+    @media (min-width: 1040px) {
+
+        .about img {
+            width: 12%;
+            top: 10px;
+            right: 10px;
+            opacity: 80%;
+            max-width: 200px;
+        }
+
+        .professions {
+            gap: 80px;
+        }
+    }
+
+    /* Här börjar css för sidan contact.html */
+
+    #contact-headline {
+        background-color: var(--primary-color);
+        padding: 36px;
+        text-align: center;
+        margin: 0;
+    }
+
+    #contact-hero {
+        position: relative;
+    }
+
+    #long-img {
+        display: none;
+    }
+
+    #short-img {
+        width: 100%;
+        height: auto;
+    }
+
     #contact-text {
-        right: 70%;
+        position: absolute;
+        bottom: 8%;
+        left: 10px;
+        right: 10%;
+        padding: 10px;
+        background-color: var(--seethrough-color);
+        border-radius: 10px;
+        color: white;
     }
 
     #contact-form {
-        max-width: 540px;
-        margin: 60px auto;
+        margin: 20px;
+        background-color: var(--primary-color);
+        border-radius: 15px;
     }
-}
+
+    fieldset {
+        border: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    legend {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        position: relative;
+        top: -20px;
+    }
+
+    #contact-form h2 {
+        background-color: var(--highlight);
+        color: white;
+        padding: 20px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        font-size: 1.5rem;
+    }
+
+
+    .form-content {
+        padding-left: 20px;
+        font-size: 0.8rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .form-content label {
+        grid-column: 1;
+    }
+
+    .form-content input {
+        grid-column: 2;
+        margin: 0px 60px 10px 0px;
+        border-style: none;
+        padding: 2px;
+    }
+
+    #submit-button {
+        grid-column: 1/3;
+        margin: 5% 25%;
+        background-color: var(--highlight);
+        border-radius: 10px;
+        color: white;
+        padding: 5px;
+    }
+
+    .form-content .long-label {
+        grid-column: 1/3;
+        grid-row: 5;
+    }
+
+    .form-content .small-input {
+        display: flex;
+
+    }
+
+    .ageInputs {
+        grid-column: 2;
+        grid-row: 6;
+        justify-self: right;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-right: 0;
+    }
+
+    .form-content .child-input {
+        grid-row: 5;
+        justify-self: right;
+    }
+
+    .form-content #describe-text {
+        grid-column: 1/3;
+        margin-right: 20px;
+    }
+
+    .form-content #describe {
+        grid-column: 1/3;
+    }
+
+    textarea {
+        resize: none;
+        margin-right: 20px;
+    }
+
+    #error {
+        grid-column: 1/3;
+    }
+
+    #error li {
+        list-style: none;
+        color: darkred;
+        font-weight: 700;
+    }
+
+    #contact-response p {
+        text-align: center;
+        font-size: 1rem;
+        background-color: var(--secondary-color);
+        color: white;
+        padding: 20px;
+        margin: 5% 20%;
+        border-radius: 15px;
+        font-weight: 700;
+    }
+
+    #foot-note {
+        margin: 30px 30px 5px;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    #read-more {
+        display: block;
+        margin: 26px auto;
+        background-color: var(--highlight);
+        color: white;
+        text-decoration: none;
+        border-radius: 15px;
+        padding: 13px 20px;
+        font-weight: 600;
+        width: 50%;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+
+    /* För kontaktsidan */
+    @media (min-width: 480px) {
+        #short-img {
+            max-height: 260px;
+        }
+
+        #contact-form {
+            max-width: 390px;
+            margin: 40px auto;
+        }
+
+        #contact-text {
+            right: 30%;
+        }
+
+        .form-content {
+        font-size: 1rem;
+    }
+
+    }
+
+    @media (min-width: 860px) {
+        #short-img {
+            display: none;
+        }
+
+        #long-img {
+            display: block;
+        }
+
+        #contact-text {
+            right: 50%;
+        }
+
+        #contact-form {
+            max-width: 540px;
+            margin: 50px auto;
+        }
+
+        #contact-form h2 {
+            text-align: center;
+        }
+
+        .form-content {
+            padding: 10px 20px 10px 30px;
+        }
+
+        #read-more {
+            width: 30%;
+        }
+    }
+
+    @media (min-width: 1040px) {
+        #contact-text {
+            right: 70%;
+        }
+
+        #contact-form {
+            max-width: 540px;
+            margin: 60px auto;
+        }
+    }
