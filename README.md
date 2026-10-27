@@ -10,7 +10,7 @@ Det här projektet är en webbplats för ett fiktivt företag som heter *Hela Fa
 för familjer i behov. Webbplatsen består av tre sidor och innehåller HTML, CSS och Javascript.
 
 ## Länk till publicering
-Här är länken till den publicerade webbplatsen på Netlify: [Fridas projekt](URL)
+Här är länken till den publicerade webbplatsen på Netlify: [Fridas projekt](https://fridasprojekt.netlify.app/)
 
 Hoppas att du tycker om min sida!
 
