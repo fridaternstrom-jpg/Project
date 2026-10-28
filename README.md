@@ -7,7 +7,7 @@ Den som utvecklat den här webbplatsen är Frida Ternström, student på program
 
 ## Om projektet
 Det här projektet är en webbplats för ett fiktivt företag som heter *Hela Familjen*, som erbjuder tjänster
-för familjer i behov. Webbplatsen består av tre sidor och innehåller HTML, CSS och Javascript.
+för familjer i behov. Webbplatsen består av tre sidor och innehåller HTML, CSS och Javascript. Jag har haft som ambition att nå betyget C.
 
 ## Länk till publicering
 Här är länken till den publicerade webbplatsen på Netlify: [Fridas projekt](https://fridasprojekt.netlify.app/)
