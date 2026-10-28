@@ -63,8 +63,6 @@ function validateForm() {
         const errorLi = document.createElement("li");
         const errorText = document.createTextNode(error);
 
-        console.log(errorArr);
-
         errorLi.appendChild(errorText);
         errorUl.appendChild(errorLi);
         errorEl.appendChild(errorUl);
