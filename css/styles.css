@@ -189,7 +189,7 @@ article p {
 
 #form-background {
     background-image: url(/images/smallerfield.jpg);
-    height: 500px;
+    height: 515px;
     background-position: bottom;
     background-size: cover;
     position: relative;
@@ -209,7 +209,7 @@ article p {
     padding: 2px 5px 15px 10px;
     margin: 20px;
     min-height: 80px;
-    min-width: 110px;
+    min-width: 100px;
 }
 
 .question-card label {
